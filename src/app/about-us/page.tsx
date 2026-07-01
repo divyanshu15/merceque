@@ -85,7 +85,7 @@ export default function AboutPage() {
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl">
             Passionate about conscious design? We want to hear from you.
           </p>
-          <button className="px-8 py-4 bg-primary text-primary-dark dark:text-primary-dark font-bold uppercase tracking-wide rounded-full hover:bg-primary/90 transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,255,127,0.3)]">
+          <button className="px-8 py-4 bg-primary text-white font-bold uppercase tracking-wide rounded-full hover:bg-primary/90 transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,255,127,0.3)]">
             View Open Positions
           </button>
         </div>
