@@ -11,7 +11,7 @@ export function Hero() {
       {/* Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex flex-col items-center justify-center text-center">
         <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-tighter leading-tight text-foreground drop-shadow-sm mb-6 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          Sustainable Bamboo<br />
+          Eco-conscious Bamboo<br />
           <span className="text-primary italic font-serif">Gift Boxes.</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-medium max-w-2xl mx-auto drop-shadow-sm mb-10 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150">

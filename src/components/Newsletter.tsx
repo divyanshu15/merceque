@@ -12,7 +12,7 @@ export function Newsletter() {
           Join the <span className="text-primary italic font-serif lowercase">Movement</span>
         </h2>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-12 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-150">
-          Sign up for our newsletter to receive sustainable living tips, exclusive offers, and get 10% off your first gift box.
+          Sign up for our newsletter to receive eco-conscious living tips, exclusive offers, and get 10% off your first gift box.
         </p>
         
         <form className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300">

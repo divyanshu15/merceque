@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Products | Merceque",
-  description: "Browse our collection of eco-friendly, sustainable bamboo products.",
+  description: "Browse our collection of eco-friendly, eco-conscious bamboo products.",
 };
 
 export default function OurProductsPage() {

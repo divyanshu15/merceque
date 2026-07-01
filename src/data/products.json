@@ -4,7 +4,7 @@
     "name": "Bamboo Combs",
     "handle": "bamboo-combs",
     "price": "$2.94",
-    "description": "Upgrade your haircare routine with our sustainable Bamboo Combs, available in tw...",
+    "description": "Upgrade your haircare routine with our eco-conscious Bamboo Combs, available in tw...",
     "image": "/product/bamboo-combs/1.png",
     "images": [
       "/product/bamboo-combs/1.png",
@@ -43,7 +43,7 @@
     "name": "Eco-Friendly Bamboo Containers",
     "handle": "eco-friendly-bamboo-containers",
     "price": "$8.94",
-    "description": "Organize your space sustainably with our stylish bamboo containers. Crafted from...",
+    "description": "Organize your space responsibly with our stylish bamboo containers. Crafted from...",
     "image": "/product/eco-friendly-bamboo-containers/1.png",
     "images": [
       "/product/eco-friendly-bamboo-containers/1.png",
@@ -58,7 +58,7 @@
     "name": "Bamboo Beer Mugs – Versatile & Eco-Friendly",
     "handle": "bamboo-beer-mugs-versatile-eco-friendly",
     "price": "$14.94",
-    "description": "Enjoy your favorite drinks sustainably with our Bamboo Beer Mugs, crafted for a ...",
+    "description": "Enjoy your favorite drinks responsibly with our Bamboo Beer Mugs, crafted for a ...",
     "image": "/product/bamboo-beer-mugs-versatile-eco-friendly/1.png",
     "images": [
       "/product/bamboo-beer-mugs-versatile-eco-friendly/1.png",
@@ -71,7 +71,7 @@
     "name": "Premium Bamboo Corporate Gift Set",
     "handle": "premium-bamboo-corporate-gift-set",
     "price": "$49.94",
-    "description": "Elevate your corporate gifting with our Sustainable Corporate Gifts Collection, ...",
+    "description": "Elevate your corporate gifting with our Eco-conscious Corporate Gifts Collection, ...",
     "image": "/product/premium-bamboo-corporate-gift-set/1.png",
     "images": [
       "/product/premium-bamboo-corporate-gift-set/1.png"
@@ -96,7 +96,7 @@
     "name": "Bamboo Cotton Buds – Pack of 75",
     "handle": "bamboo-cotton-buds-pack-of-75-eco-friendly-biodegradable",
     "price": "$2.94",
-    "description": "Make the switch to sustainable self-care with our Bamboo Ear Buds – the perfect ...",
+    "description": "Make the switch to eco-conscious self-care with our Bamboo Ear Buds – the perfect ...",
     "image": "/product/bamboo-cotton-buds-pack-of-75-eco-friendly-biodegradable/1.png",
     "images": [
       "/product/bamboo-cotton-buds-pack-of-75-eco-friendly-biodegradable/1.png"
@@ -120,44 +120,44 @@
   },
   {
     "id": 7856276013113,
-    "name": "Natural Loofah - Your Sustainable Skincare",
-    "handle": "natural-loofah-set-sustainable-skincare-duo",
+    "name": "Natural Loofah - Your Eco-conscious Skincare",
+    "handle": "natural-loofah-set-natural-skincare-duo",
     "price": "$5.94",
     "description": "Pamper your skin and the planet with the Merceque's Natural Loofah Set! This eco...",
-    "image": "/product/natural-loofah-set-sustainable-skincare-duo/1.png",
+    "image": "/product/natural-loofah-set-natural-skincare-duo/1.png",
     "images": [
-      "/product/natural-loofah-set-sustainable-skincare-duo/1.png",
-      "/product/natural-loofah-set-sustainable-skincare-duo/2.png"
+      "/product/natural-loofah-set-natural-skincare-duo/1.png",
+      "/product/natural-loofah-set-natural-skincare-duo/2.png"
     ],
     "quantity": 10
   },
   {
     "id": 7856269131833,
-    "name": "EcoFriendly Bamboo Coffee Mug - Sustainable Sippping in Style",
-    "handle": "ecofriendly-bamboo-coffee-mug-sustainable-sippping-in-style",
+    "name": "EcoFriendly Bamboo Coffee Mug - Eco-conscious Sippping in Style",
+    "handle": "ecofriendly-bamboo-coffee-mug-natural-sippping-in-style",
     "price": "$24.97",
-    "description": "Start your day sustainably with the EcoFriendly Bamboo Coffee Mug! Available in ...",
-    "image": "/product/ecofriendly-bamboo-coffee-mug-sustainable-sippping-in-style/1.png",
+    "description": "Start your day responsibly with the EcoFriendly Bamboo Coffee Mug! Available in ...",
+    "image": "/product/ecofriendly-bamboo-coffee-mug-natural-sippping-in-style/1.png",
     "images": [
-      "/product/ecofriendly-bamboo-coffee-mug-sustainable-sippping-in-style/1.png",
-      "/product/ecofriendly-bamboo-coffee-mug-sustainable-sippping-in-style/2.png",
-      "/product/ecofriendly-bamboo-coffee-mug-sustainable-sippping-in-style/3.png",
-      "/product/ecofriendly-bamboo-coffee-mug-sustainable-sippping-in-style/4.png",
-      "/product/ecofriendly-bamboo-coffee-mug-sustainable-sippping-in-style/5.png"
+      "/product/ecofriendly-bamboo-coffee-mug-natural-sippping-in-style/1.png",
+      "/product/ecofriendly-bamboo-coffee-mug-natural-sippping-in-style/2.png",
+      "/product/ecofriendly-bamboo-coffee-mug-natural-sippping-in-style/3.png",
+      "/product/ecofriendly-bamboo-coffee-mug-natural-sippping-in-style/4.png",
+      "/product/ecofriendly-bamboo-coffee-mug-natural-sippping-in-style/5.png"
     ],
     "quantity": 10
   },
   {
     "id": 7856266641465,
-    "name": "EcoFriendly Bamboo Water Bottle - Sustainable & Stylish Hydration",
-    "handle": "ecofriendly-bamboo-water-bottle-sustainable-stylish-hydration",
+    "name": "EcoFriendly Bamboo Water Bottle - Eco-conscious & Stylish Hydration",
+    "handle": "ecofriendly-bamboo-water-bottle-natural-stylish-hydration",
     "price": "$29.94",
     "description": "Stay hydrated in style with the EcoZen Bamboo Water Bottle! Crafted from eco-fri...",
-    "image": "/product/ecofriendly-bamboo-water-bottle-sustainable-stylish-hydration/1.png",
+    "image": "/product/ecofriendly-bamboo-water-bottle-natural-stylish-hydration/1.png",
     "images": [
-      "/product/ecofriendly-bamboo-water-bottle-sustainable-stylish-hydration/1.png",
-      "/product/ecofriendly-bamboo-water-bottle-sustainable-stylish-hydration/2.png",
-      "/product/ecofriendly-bamboo-water-bottle-sustainable-stylish-hydration/3.png"
+      "/product/ecofriendly-bamboo-water-bottle-natural-stylish-hydration/1.png",
+      "/product/ecofriendly-bamboo-water-bottle-natural-stylish-hydration/2.png",
+      "/product/ecofriendly-bamboo-water-bottle-natural-stylish-hydration/3.png"
     ],
     "quantity": 10
   },
@@ -166,7 +166,7 @@
     "name": "EcoFriendly Bamboo Gift Box",
     "handle": "ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set",
     "price": "$54.88",
-    "description": "The Merceque Bamboo Gift Box is the perfect eco-friendly duo for sustainable sip...",
+    "description": "The Merceque Bamboo Gift Box is the perfect eco-friendly duo for eco-conscious sip...",
     "image": "/product/ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set/1.png",
     "images": [
       "/product/ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set/1.png",
@@ -182,29 +182,29 @@
   },
   {
     "id": 7856247799865,
-    "name": "EcoFriendly Bamboo Trio - Sustainable Water Bottle, Tea Cup & Storage Container",
-    "handle": "ecofriendly-bamboo-trio-sustainable-water-bottle-tea-cup-storage-container",
+    "name": "EcoFriendly Bamboo Trio - Eco-conscious Water Bottle, Tea Cup & Storage Container",
+    "handle": "ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container",
     "price": "$54.94",
     "description": "Discover the EcoFriendly Bamboo Trio – a harmonious blend of eco-conscious desig...",
-    "image": "/product/ecofriendly-bamboo-trio-sustainable-water-bottle-tea-cup-storage-container/1.jpg",
+    "image": "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/1.jpg",
     "images": [
-      "/product/ecofriendly-bamboo-trio-sustainable-water-bottle-tea-cup-storage-container/1.jpg",
-      "/product/ecofriendly-bamboo-trio-sustainable-water-bottle-tea-cup-storage-container/2.png",
-      "/product/ecofriendly-bamboo-trio-sustainable-water-bottle-tea-cup-storage-container/3.png",
-      "/product/ecofriendly-bamboo-trio-sustainable-water-bottle-tea-cup-storage-container/4.jpg",
-      "/product/ecofriendly-bamboo-trio-sustainable-water-bottle-tea-cup-storage-container/5.png"
+      "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/1.jpg",
+      "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/2.png",
+      "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/3.png",
+      "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/4.jpg",
+      "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/5.png"
     ],
     "quantity": 10
   },
   {
     "id": 7856229646393,
-    "name": "Bamboo Mug Gift Set - Sustainable & Stylish",
-    "handle": "ecofriendly-bamboo-mug-gift-set-sustainable-stylish",
+    "name": "Bamboo Mug Gift Set - Eco-conscious & Stylish",
+    "handle": "ecofriendly-bamboo-mug-gift-set-natural-stylish",
     "price": "$39.94",
     "description": "Elevate your sipping experience with the EcoZen Bamboo Mug Gift Set – the perfec...",
-    "image": "/product/ecofriendly-bamboo-mug-gift-set-sustainable-stylish/1.jpg",
+    "image": "/product/ecofriendly-bamboo-mug-gift-set-natural-stylish/1.jpg",
     "images": [
-      "/product/ecofriendly-bamboo-mug-gift-set-sustainable-stylish/1.jpg"
+      "/product/ecofriendly-bamboo-mug-gift-set-natural-stylish/1.jpg"
     ],
     "quantity": 10
   },

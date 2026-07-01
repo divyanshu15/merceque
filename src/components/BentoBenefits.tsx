@@ -21,7 +21,7 @@ const benefits = [
   },
   {
     title: "Ethical Sourcing",
-    description: "Sustainably harvested bamboo, empowering local communities.",
+    description: "Responsibly harvested bamboo, empowering local communities.",
     icon: <Leaf className="w-6 h-6 text-[#37A161]" />,
     className: "md:col-span-1 md:row-span-1",
     iconClassName: "bg-[#37A161]/20",
@@ -46,7 +46,7 @@ export function BentoBenefits() {
             Nature's Blueprint. <span className="text-primary">Modern Living.</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Experience the harmony of sustainable materials and cutting-edge design. Our bamboo products aren't just an alternative; they're an upgrade.
+            Experience the harmony of eco-conscious materials and cutting-edge design. Our bamboo products aren't just an alternative; they're an upgrade.
           </p>
         </div>
 

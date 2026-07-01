@@ -4,7 +4,7 @@ import { Leaf, Recycle, HeartHandshake } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Us | Merceque",
-  description: "Learn about Merceque's vision for sustainable, eco-friendly bamboo products and modern design.",
+  description: "Learn about Merceque's vision for eco-conscious, eco-friendly bamboo products and modern design.",
 };
 
 export default function AboutPage() {

@@ -5,7 +5,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "For Businesses | Merceque",
-  description: "Wholesale bamboo products and sustainable corporate gifting solutions.",
+  description: "Wholesale bamboo products and eco-conscious corporate gifting solutions.",
 };
 
 export default function ForBusinessesPage() {
@@ -19,7 +19,7 @@ export default function ForBusinessesPage() {
               Partner with <span className="text-primary italic font-serif">Nature</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400">
-              Elevate your brand with sustainable, custom-branded bamboo products. Ideal for corporate gifting, hospitality, and retail wholesale.
+              Elevate your brand with eco-conscious, custom-branded bamboo products. Ideal for corporate gifting, hospitality, and retail wholesale.
             </p>
             <Link href="/contact">
               <Button className="mt-4 px-8 py-4 text-lg">Request Wholesale Catalog</Button>
@@ -58,7 +58,7 @@ export default function ForBusinessesPage() {
                 Why Choose Merceque?
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                When you partner with Merceque, you are investing in high-quality, sustainable solutions that align with modern consumer values. We make the transition to eco-friendly products seamless and beautiful.
+                When you partner with Merceque, you are investing in high-quality, eco-conscious solutions that align with modern consumer values. We make the transition to eco-friendly products seamless and beautiful.
               </p>
               <ul className="flex flex-col gap-4 mt-4">
                 {[
@@ -79,7 +79,7 @@ export default function ForBusinessesPage() {
                {/* Placeholder for an image or branded graphic */}
                <div className="text-center">
                  <span className="text-6xl mb-4 block">🏢</span>
-                 <h3 className="text-2xl font-bold text-foreground">Sustainable Business</h3>
+                 <h3 className="text-2xl font-bold text-foreground">Eco-conscious Business</h3>
                </div>
             </div>
           </div>

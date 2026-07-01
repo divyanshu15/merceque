@@ -5,11 +5,11 @@ const collections = [
   {
     title: "Personal Care",
     image: "/product/personal-care-kit/1.png",
-    description: "Sustainable self-care essentials",
+    description: "Eco-conscious self-care essentials",
   },
   {
     title: "Drinkware",
-    image: "/product/ecofriendly-bamboo-water-bottle-sustainable-stylish-hydration/1.png",
+    image: "/product/ecofriendly-bamboo-water-bottle-natural-stylish-hydration/1.png",
     description: "Eco-friendly hydration and mugs",
   },
   {

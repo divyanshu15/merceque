@@ -13,7 +13,7 @@ export function About() {
         
         <div className="flex flex-col gap-4 text-4xl md:text-7xl lg:text-8xl uppercase tracking-tighter leading-none text-foreground">
           <div className="font-black hover:text-primary transition-colors duration-500 cursor-default">
-            Sustainable
+            Eco-conscious
           </div>
           <div className="font-black text-accent hover:text-primary transition-colors duration-500 cursor-default">
             Bamboo

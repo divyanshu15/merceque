@@ -5,7 +5,7 @@ const steps = [
   {
     icon: <Package className="w-10 h-10 text-primary" />,
     title: "1. Choose Your Box",
-    description: "Sustainable bamboo gift boxes for every occasion.",
+    description: "Eco-conscious bamboo gift boxes for every occasion.",
   },
   {
     icon: <MessageSquareHeart className="w-10 h-10 text-primary" />,

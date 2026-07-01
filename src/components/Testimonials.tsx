@@ -5,7 +5,7 @@ const reviews = [
   {
     name: "Sarah Jenkins",
     role: "Eco-conscious Shopper",
-    text: "The Bamboo Corporate Gift Set was the perfect sustainable gift for my team. Everyone loved the premium feel and the eco-friendly mission behind it. Highly recommended!",
+    text: "The Bamboo Corporate Gift Set was the perfect eco-conscious gift for my team. Everyone loved the premium feel and the eco-friendly mission behind it. Highly recommended!",
   },
   {
     name: "Michael Chen",
@@ -28,7 +28,7 @@ export function Testimonials() {
             Hear From Our <span className="text-primary italic font-serif lowercase">Community</span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Real stories from people who made the switch to a sustainable lifestyle with Merceque.
+            Real stories from people who made the switch to a eco-conscious lifestyle with Merceque.
           </p>
         </div>
 

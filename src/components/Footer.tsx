@@ -127,7 +127,7 @@ export function Footer() {
         <p className="text-sm text-gray-500">
           © {new Date().getFullYear()} Merceque. All rights reserved.
         </p>
-        <p className="text-sm text-gray-500 font-mono">SUSTAINABLE // DESIGN</p>
+        <p className="text-sm text-gray-500 font-mono">ECO-CONSCIOUS // DESIGN</p>
       </div>
     </footer>
   );
