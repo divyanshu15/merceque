@@ -5,12 +5,12 @@
 :root {
   --background: #F5F5F5; /* Light mode background */
   --foreground: #121212; /* Light mode text */
-  --color-primary: #7CA982; /* Natural bamboo green */
-  --color-primary-dark: #4A7C59; /* Deep organic green */
+  --color-primary: #37A161; /* Natural bamboo green */
+  --color-primary-dark: #37A161; /* Deep organic green */
   --color-accent: #E8C396; /* Bamboo light */
   --color-accent-dark: #D4A373; /* Bamboo dark */
   --color-border-subtle: #E0E0E0;
-  --color-border-nature: #1A4D2E;
+  --color-border-nature: #37A161;
 }
 
 .dark {

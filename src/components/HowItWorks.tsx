@@ -5,18 +5,18 @@ const steps = [
   {
     icon: <Package className="w-10 h-10 text-primary" />,
     title: "1. Choose Your Box",
-    description: "Select from our range of sustainable bamboo gift boxes tailored for every occasion.",
+    description: "Sustainable bamboo gift boxes for every occasion.",
   },
   {
     icon: <MessageSquareHeart className="w-10 h-10 text-primary" />,
     title: "2. Add a Note",
-    description: "Personalize your gift with a heartfelt, handwritten message.",
+    description: "Personalize with a handwritten message.",
   },
   {
     icon: <Truck className="w-10 h-10 text-primary" />,
     title: "3. Zero Waste Delivery",
-    description: "We pack and deliver your gift using 100% eco-friendly and biodegradable materials.",
-  }
+    description: "100% eco-friendly and biodegradable delivery.",
+  },
 ];
 
 export function HowItWorks() {
@@ -24,7 +24,10 @@ export function HowItWorks() {
     <section className="py-24 px-6 bg-background relative border-y border-border-subtle">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-foreground mb-16 animate-in fade-in slide-in-from-bottom-8 duration-700">
-          The Gifting <span className="text-primary italic font-serif lowercase">Process</span>
+          The Gifting{" "}
+          <span className="text-primary italic font-serif lowercase">
+            Process
+          </span>
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center items-start gap-8 relative">
@@ -32,10 +35,13 @@ export function HowItWorks() {
           <div className="hidden md:block absolute top-12 left-[15%] right-[15%] h-[1px] bg-border-subtle -z-10" />
 
           {steps.map((step, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="flex-1 flex flex-col items-center animate-in fade-in slide-in-from-bottom-8 duration-700"
-              style={{ animationDelay: `${index * 200}ms`, animationFillMode: 'both' }}
+              style={{
+                animationDelay: `${index * 200}ms`,
+                animationFillMode: "both",
+              }}
             >
               <div className="w-24 h-24 rounded-full bg-background border border-border-subtle flex items-center justify-center mb-6 shadow-sm">
                 {step.icon}

@@ -22,7 +22,7 @@ export default function ForBusinessesPage() {
               Elevate your brand with sustainable, custom-branded bamboo products. Ideal for corporate gifting, hospitality, and retail wholesale.
             </p>
             <Link href="/contact">
-              <Button className="mt-4" size="lg">Request Wholesale Catalog</Button>
+              <Button className="mt-4 px-8 py-4 text-lg">Request Wholesale Catalog</Button>
             </Link>
           </div>
 
@@ -119,7 +119,7 @@ export default function ForBusinessesPage() {
             Let's work together to eliminate plastic waste in your industry. Reach out today for our wholesale pricing catalog.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="flex items-center gap-2">
+            <Button className="flex items-center gap-2 px-8 py-4 text-lg">
               Contact Sales Team <ArrowRight className="w-4 h-4" />
             </Button>
           </Link>

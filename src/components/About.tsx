@@ -24,11 +24,8 @@ export function About() {
         </div>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
-          <p className="text-xl text-gray-600 dark:text-gray-300 font-medium leading-relaxed">
-            We merge modern design principles with organic, eco-friendly materials to create products that stand the test of time. Smooth curves. Natural utility.
-          </p>
-          <p className="text-xl text-gray-600 dark:text-gray-300 font-medium leading-relaxed">
-            Our bamboo products are crafted with precision, reducing environmental footprint while elevating your daily rituals.
+          <p className="text-3xl text-gray-800 dark:text-gray-200 font-bold leading-tight">
+            Modern design meets eco-friendly materials. <br/> Crafted for longevity. Built for nature.
           </p>
         </div>
       </div>

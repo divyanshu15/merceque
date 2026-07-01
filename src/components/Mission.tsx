@@ -5,17 +5,17 @@ const impacts = [
   {
     icon: <Leaf className="w-8 h-8 mb-4 text-primary" />,
     title: "100% Biodegradable",
-    description: "Our bamboo products return to the earth without leaving a trace.",
+    description: "Returns to the earth without a trace.",
   },
   {
     icon: <Recycle className="w-8 h-8 mb-4 text-primary" />,
     title: "Plastic-Free Packaging",
-    description: "We are committed to zero-waste, eco-conscious packaging solutions.",
+    description: "Zero-waste, eco-conscious solutions.",
   },
   {
     icon: <Heart className="w-8 h-8 mb-4 text-primary" />,
     title: "Ethically Sourced",
-    description: "Materials harvested responsibly to preserve natural ecosystems.",
+    description: "Responsibly harvested. Ecosystems preserved.",
   }
 ];
 
@@ -26,8 +26,8 @@ export function Mission() {
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-6 animate-in fade-in slide-in-from-bottom-8 duration-700">
           Why <span className="text-primary italic font-serif">Merceque?</span>
         </h2>
-        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mb-16 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-150">
-          We believe in aesthetics that respect the planet. By choosing Merceque, you are taking a step towards a greener, more sustainable lifestyle without compromising on quality or design.
+        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl mb-16 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-150">
+          Aesthetics that respect the planet.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full">

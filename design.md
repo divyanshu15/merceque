@@ -6,9 +6,9 @@
 
 ## Color Palette
 - **Background:** True Black (`#000000`) to Charcoal (`#121212`)
-- **Primary Accent (Nature Green):** Deep forest green to vibrant leaf green (e.g., `#2E8B57`, `#00FF7F`)
+- **Primary Accent (Nature Green):** Deep forest green to vibrant leaf green (e.g., `#37A161`)
 - **Secondary Accent (Bamboo):** Warm, natural bamboo tones (e.g., `#E8C396`, `#D4A373`)
-- **Borders & Separators:** Subtle gray or dim green (`#333333` or `#1A4D2E`)
+- **Borders & Separators:** Subtle gray or dim green (`#333333` or `#37A161`)
 - **Typography:** Off-white (`#F5F5F5`) for primary text, muted gray (`#A3A3A3`) for secondary text.
 
 ## UI Elements

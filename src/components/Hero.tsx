@@ -14,8 +14,8 @@ export function Hero() {
           Sustainable Bamboo<br />
           <span className="text-primary italic font-serif">Gift Boxes.</span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 font-medium max-w-2xl mx-auto drop-shadow-sm mb-10 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150">
-          Discover high-quality Bamboo and other sustainable gift boxes and products. Your go-to online shop for eco-friendly, customizable bamboo gift boxes for every occasion.
+        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-medium max-w-2xl mx-auto drop-shadow-sm mb-10 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150">
+          Eco-friendly, customizable bamboo gift boxes for every occasion.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
           <Button variant="primary" className="px-8 py-4 text-lg">Shop Collections</Button>

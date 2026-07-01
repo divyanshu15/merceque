@@ -22,9 +22,9 @@ const benefits = [
   {
     title: "Ethical Sourcing",
     description: "Sustainably harvested bamboo, empowering local communities.",
-    icon: <Leaf className="w-6 h-6 text-green-400" />,
+    icon: <Leaf className="w-6 h-6 text-[#37A161]" />,
     className: "md:col-span-1 md:row-span-1",
-    iconClassName: "bg-green-400/20",
+    iconClassName: "bg-[#37A161]/20",
     image: "/images/bento_ethical_sourcing_1777865873606.png",
   },
   {
