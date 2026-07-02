@@ -9,21 +9,17 @@ export function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 md:gap-24">
         {/* Brand Column */}
         <div className="flex flex-col gap-6 md:w-1/3">
-          <Link href="/" className="flex items-center gap-2 group w-fit">
+          <Link href="/" className="flex items-center gap-3 group w-fit">
             <Image
-              src="/logo/logo-light.png"
+              src="/logo/merceque-logo-2.png"
               alt="Merceque Logo"
-              width={180}
+              width={48}
               height={48}
-              className="dark:hidden h-12 w-auto object-contain transition-transform group-hover:scale-105"
+              className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
             />
-            <Image
-              src="/logo/logo-dark.png"
-              alt="Merceque Logo"
-              width={180}
-              height={48}
-              className="hidden dark:block h-12 w-auto object-contain transition-transform group-hover:scale-105"
-            />
+            <span className="text-xl font-bold tracking-widest uppercase text-foreground">
+              MERCEQUE
+            </span>
           </Link>
           <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
             Merging brutalist aesthetics with organic sustainability. We curate
@@ -127,7 +123,9 @@ export function Footer() {
         <p className="text-sm text-gray-500">
           © {new Date().getFullYear()} Merceque. All rights reserved.
         </p>
-        <p className="text-sm text-gray-500 font-mono">ECO-CONSCIOUS // DESIGN</p>
+        <p className="text-sm text-gray-500 font-mono">
+          ECO-CONSCIOUS // DESIGN
+        </p>
       </div>
     </footer>
   );

@@ -9,21 +9,17 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-40 bg-background/80 backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="/" className="flex items-center gap-3 group">
           <Image
-            src="/logo/logo-light.png"
+            src="/logo/merceque-logo-2.png"
             alt="Merceque Logo"
-            width={180}
+            width={48}
             height={48}
-            className="dark:hidden h-12 w-auto object-contain transition-transform group-hover:scale-105"
+            className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
           />
-          <Image
-            src="/logo/logo-dark.png"
-            alt="Merceque Logo"
-            width={180}
-            height={48}
-            className="hidden dark:block h-12 w-auto object-contain transition-transform group-hover:scale-105"
-          />
+          <span className="text-xl font-bold tracking-widest uppercase text-foreground">
+            MERCEQUE
+          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-600 dark:text-gray-300">
