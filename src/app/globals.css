@@ -3,7 +3,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #F5F5F5; /* Light mode background */
+  --background: #efecec; /* Light mode background */
   --foreground: #121212; /* Light mode text */
   --color-primary: #37A161; /* Natural bamboo green */
   --color-primary-dark: #37A161; /* Deep organic green */
