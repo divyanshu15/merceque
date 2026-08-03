@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 export default function OurProductsPage() {
   return (
     <main className="flex min-h-screen flex-col w-full pt-20">
-      <Products />
+      <Products title={<>Combo<br/>Kits</>} category="combo" />
+      <Products title={<>Individual<br/>Products</>} category="individual" hidePaddingTop />
     </main>
   );
 }

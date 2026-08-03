@@ -1,23 +1,20 @@
-import { Hero } from "@/components/Hero";
-import { Collections } from "@/components/Collections";
-import { Mission } from "@/components/Mission";
-import { HowItWorks } from "@/components/HowItWorks";
-import { Products } from "@/components/Products";
-import { Testimonials } from "@/components/Testimonials";
-import { Newsletter } from "@/components/Newsletter";
-import { About } from "@/components/About";
+import { FigmaHero } from "@/components/figma-home/FigmaHero";
+import { GiftingCombos } from "@/components/figma-home/GiftingCombos";
+import { CollectionsGrid } from "@/components/figma-home/CollectionsGrid";
+import { QuoteSection } from "@/components/figma-home/QuoteSection";
+import { SignatureServices } from "@/components/figma-home/SignatureServices";
+import { ViewAllProducts } from "@/components/figma-home/ViewAllProducts";
+import { SocialFollow } from "@/components/figma-home/SocialFollow";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col w-full">
-      <Hero />
-      <Collections />
-      <Mission />
-      <HowItWorks />
-      <Products />
-      <About />
-      <Testimonials />
-      <Newsletter />
+    <main className="flex min-h-screen flex-col w-full bg-[#efecec]">
+      <FigmaHero />
+      <CollectionsGrid />
+      <QuoteSection />
+      <SignatureServices />
+      <ViewAllProducts />
+      <SocialFollow />
     </main>
   );
 }

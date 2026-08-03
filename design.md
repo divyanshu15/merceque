@@ -1,29 +1,25 @@
 # Merceque Design System
 
 ## Aesthetic Vision
-**Theme:** Minimalist & Brutalist Fusion
-**Core Feel:** Dark, crisp, grounded, and physical, merging brutalist structure with elegant, organic 3D elements.
+**Theme:** Visually Rich & Natural Minimalist
+**Core Feel:** Clean, image-heavy, and organic. Using high-quality product lifestyle photography, soft gradients, and nature-inspired greens to drive engagement without relying on heavy text blocks. Perfect for the visually-driven US market.
 
 ## Color Palette
-- **Background:** True Black (`#000000`) to Charcoal (`#121212`)
-- **Primary Accent (Nature Green):** Deep forest green to vibrant leaf green (e.g., `#37A161`)
-- **Secondary Accent (Bamboo):** Warm, natural bamboo tones (e.g., `#E8C396`, `#D4A373`)
-- **Borders & Separators:** Subtle gray or dim green (`#333333` or `#37A161`)
-- **Typography:** Off-white (`#F5F5F5`) for primary text, muted gray (`#A3A3A3`) for secondary text.
+- **Background:** Off-white/Light Grey (`#efecec`)
+- **Primary Green (Nature):** Earthy, forest green (`#4d6955`, `#385642`)
+- **Secondary Accent (Bamboo):** Natural bamboo tones (`#E8C396`, `#D4A373`)
+- **Typography:** Charcoal (`#121212`) for primary text, white (`#ffffff`) for text overlapping dark greens/images.
 
 ## UI Elements
-- **Borders:** 1px solid borders for all container separation.
-- **Shadows:** NO heavy drop shadows. Rely on border contrast and physical geometry.
-- **Texture:** Lightweight CSS noise/film grain overlay across the entire application to provide a tactile feel without heavy asset costs.
-- **Buttons:** High-contrast accent colors (Nature Green / Bamboo) with sharp, unrounded corners (Brutalist).
+- **Borders & Shapes:** Clean, unrounded (brutalist touch) or slightly rounded edges, focusing on straight grid lines and distinct blocks of color/images.
+- **Shadows:** Minimal. Rely on distinct blocks of color and imagery for depth.
+- **Buttons:** Solid colors (dark green or charcoal) with sharp edges.
+- **Imagery:** Large, full-width banners, 50/50 split sections, and clean grid galleries.
 
-## 3D & Interactivity
-- **Hero Object:** A low-poly 3D bamboo product/nature element that reacts to scroll and mouse movement.
-- **Scroll Experience:** Scroll-driven animations replacing static scroll. Elements fade, slide, and rotate into place based on scroll progress.
-- **Typography:** Kinetic typography in the About/Features section (font weight/width altering dynamically based on scroll position).
+## Typography
+- **Font:** `Inter` (sans-serif).
+- **Style:** Clean, non-italicized, easy to read. Large headings overlaying images, very minimal body paragraphs.
 
-## Optimization Mandate
-- **No-Lag:** Strict adherence to high-performance rendering.
-- **3D Assets:** Heavily optimized, low-poly models only. Lazy-loaded and initialized asynchronously.
-- **Load Time:** Sub-2 seconds.
-- **Mobile-First:** Fluid, responsive, and performance-tested on mobile hardware.
+## Content Strategy
+- **Show, Don't Tell:** Use lifestyle product photography to communicate value instead of paragraphs of text.
+- **Visual Hierarchy:** Guide the user from a striking hero image down to curated product grids and aesthetic quotes.

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Footer() {
   return (
@@ -70,6 +71,15 @@ export function Footer() {
             >
               Contact Us
             </Link>
+            <a
+              href="https://cal.com/divyanshu-singh-xzmqzh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm flex items-center gap-1 group"
+            >
+              Book Meeting
+              <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </a>
             <Link
               href="/contact#faq"
               className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm"
@@ -123,9 +133,12 @@ export function Footer() {
         <p className="text-sm text-gray-500">
           © {new Date().getFullYear()} Merceque. All rights reserved.
         </p>
-        <p className="text-sm text-gray-500 font-mono">
-          ECO-CONSCIOUS // DESIGN
-        </p>
+        <div className="flex items-center gap-6">
+          <ThemeToggle />
+          <p className="text-sm text-gray-500 font-mono hidden md:block">
+            ECO-CONSCIOUS // DESIGN
+          </p>
+        </div>
       </div>
     </footer>
   );

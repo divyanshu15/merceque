@@ -85,6 +85,7 @@ export default function AdminProductsPage() {
                 <tr className="bg-neutral-50 dark:bg-neutral-900 border-b border-neutral-200 dark:border-neutral-800">
                   <th className="p-4 font-medium text-neutral-500 w-16">Image</th>
                   <th className="p-4 font-medium text-neutral-500">Name</th>
+                  <th className="p-4 font-medium text-neutral-500">Type</th>
                   <th className="p-4 font-medium text-neutral-500">Price</th>
                   <th className="p-4 font-medium text-neutral-500">Quantity</th>
                   <th className="p-4 font-medium text-neutral-500 text-right">Actions</th>
@@ -110,9 +111,16 @@ export default function AdminProductsPage() {
                       )}
                     </td>
                     <td className="p-4 font-medium">{product.name}</td>
-                    <td className="p-4">{product.price}</td>
                     <td className="p-4">
-                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                      <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${product.category === 'combo' ? 'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-400' : 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400'}`}>
+                        {product.category === 'combo' ? 'Kit' : 'Product'}
+                      </span>
+                    </td>
+                    <td className="p-4 text-neutral-600 dark:text-neutral-400">
+                      {product.category === 'combo' ? '-' : product.price}
+                    </td>
+                    <td className="p-4">
+                      <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium whitespace-nowrap ${
                         product.quantity > 10 
                           ? 'bg-[#37A161]/10 text-[#37A161] dark:bg-[#37A161]/30 dark:text-[#37A161]' 
                           : product.quantity > 0

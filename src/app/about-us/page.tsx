@@ -1,95 +1,143 @@
-import { About } from "@/components/About";
-import { Metadata } from "next";
-import { Leaf, Recycle, HeartHandshake } from "lucide-react";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Leaf, Globe2, HeartHandshake, ShieldCheck } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "About Us | Merceque",
-  description: "Learn about Merceque's vision for eco-conscious, eco-friendly bamboo products and modern design.",
-};
-
-export default function AboutPage() {
+export default function AboutUsPage() {
   return (
-    <main className="flex flex-col w-full">
-      {/* Existing About component acting as Hero */}
-      <About />
-
-      {/* Our Story Section */}
-      <section id="story" className="py-32 px-6 bg-black/5 dark:bg-[#0a0a0a] border-t border-black/10 dark:border-white/10 relative overflow-hidden">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
-          <div className="flex-1 w-full h-[400px] bg-black/10 dark:bg-white/5 rounded-3xl border border-black/10 dark:border-white/10 flex items-center justify-center overflow-hidden relative">
-             {/* Visual Placeholder for Image/Video */}
-             <div className="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
-             <Leaf className="w-24 h-24 text-primary opacity-50 relative z-10" />
-          </div>
-          <div className="flex-1 flex flex-col gap-6">
-            <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tight text-foreground mb-4">
-              Our <span className="text-primary italic font-serif">Story</span>
-            </h2>
-            <p className="text-2xl md:text-4xl font-bold text-gray-800 dark:text-gray-200 leading-tight">
-              Challenging the status quo. <br/> Less plastic, more nature.
-            </p>
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 font-medium">
-              We curate premium bamboo essentials designed to elevate daily rituals.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Sustainability Section */}
-      <section id="sustainability" className="py-32 px-6 bg-background border-t border-black/10 dark:border-white/10 relative">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tight text-foreground mb-16 text-center">
-            The <span className="text-primary">Impact</span>
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="flex flex-col items-center text-center gap-6 p-8 bg-black/5 dark:bg-white/5 rounded-3xl border border-black/10 dark:border-white/10">
-              <div className="w-16 h-16 rounded-full bg-[#37A161]/20 flex items-center justify-center">
-                <Leaf className="w-8 h-8 text-[#37A161]" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground">Rapidly Renewable</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Grows up to 3 feet in 24 hours. Regenerates without pesticides.
-              </p>
-            </div>
-            
-            <div className="flex flex-col items-center text-center gap-6 p-8 bg-black/5 dark:bg-white/5 rounded-3xl border border-black/10 dark:border-white/10">
-              <div className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center">
-                <Recycle className="w-8 h-8 text-blue-500" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground">Zero Plastic</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                100% plastic-free supply chain. Naturally biodegrades.
-              </p>
-            </div>
-            
-            <div className="flex flex-col items-center text-center gap-6 p-8 bg-black/5 dark:bg-white/5 rounded-3xl border border-black/10 dark:border-white/10">
-              <div className="w-16 h-16 rounded-full bg-yellow-500/20 flex items-center justify-center">
-                <HeartHandshake className="w-8 h-8 text-yellow-500" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground">Ethical Production</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Partnered with certified, fair-wage farming communities.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Careers / Values Section */}
-      <section id="careers" className="py-32 px-6 bg-black/5 dark:bg-[#0a0a0a] border-y border-black/10 dark:border-white/10 relative">
-        <div className="max-w-4xl mx-auto text-center flex flex-col items-center gap-8">
-          <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground">
-            Join the <span className="text-primary italic font-serif">Mission</span>
-          </h2>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl">
-            Passionate about conscious design? We want to hear from you.
+    <div className="min-h-screen bg-neutral-50 flex flex-col pt-32">
+      {/* Hero Section */}
+      <section className="w-full px-6 py-12 lg:py-20 bg-[#dbe1d6]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2b4433] mb-6 font-cursive">
+            About Us
+          </h1>
+          <p className="text-lg md:text-xl text-neutral-700 leading-relaxed font-medium">
+            Embracing a sustainable lifestyle with beautifully crafted, nature-inspired products.
           </p>
-          <button className="px-8 py-4 bg-primary text-white font-bold uppercase tracking-wide rounded-full hover:bg-primary/90 transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,255,127,0.3)]">
-            View Open Positions
-          </button>
         </div>
       </section>
-    </main>
+
+      {/* Our Story: Left Text, Right Image */}
+      <section className="w-full px-6 py-16 lg:py-24 bg-white" id="story">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          <div className="w-full lg:w-1/2 space-y-6 text-neutral-600 text-lg leading-relaxed">
+            <p>
+              At Merceque, we are dedicated to promoting an eco-friendly lifestyle by offering beautifully crafted, nature-inspired products that enrich daily life. Our diverse range includes items made from sustainable materials like bamboo, wood, natural fibers, leaves, stone, and plants—all crafted by talented artisans. We proudly support and showcase artists locally and globally, providing them with a platform to share their creations with the world.
+            </p>
+            <p>
+              Whether for personal use or as unique corporate gifts, our products are thoughtfully designed and customizable to meet individual needs. Each piece is a work of art, made with natural materials and colors, allowing you to embrace sustainable choices in style.
+            </p>
+            <p>
+              At Merceque, we design our products in Montreal, Canada, and ethically source them from skilled artisans and manufacturers in India. With a dedicated office in India for procurement and shipping, we ensure fair wages and responsible practices throughout our supply chain. We proudly serve customers across Canada and the US, delivering thoughtfully crafted pieces that blend quality, culture, and care.
+            </p>
+          </div>
+          <div className="w-full lg:w-1/2 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+            <Image
+              src="/images/new/wooden_cups.jpeg"
+              alt="Artisanal Wooden Cups"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision: Left Image, Right Text */}
+      <section className="w-full px-6 py-16 lg:py-24 bg-[#2b4433] text-white" id="sustainability">
+        <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+          <div className="w-full lg:w-1/2 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+            <Image
+              src="/images/new/bamboo_bath_kit.jpg"
+              alt="Sustainable Personal Care Kit"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+          <div className="w-full lg:w-1/2 space-y-10">
+            <div className="space-y-4">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#dbe1d6]">Our Mission</h2>
+              <p className="text-lg text-white/90 leading-relaxed">
+                Our mission is to make sustainable living easy and accessible by offering eco-friendly products. For every part of your life - from gifts for loved ones to essentials for your kitchen and personal care, we aim to touch every aspect of your day to day life.
+              </p>
+            </div>
+            
+            <div className="space-y-4">
+              <h2 className="text-3xl lg:text-4xl font-bold text-[#dbe1d6]">Our Vision</h2>
+              <p className="text-lg text-white/90 leading-relaxed">
+                Our vision is to reduce carbon footprints and foster a lifestyle centered around sustainability, creativity, and the celebration of craftsmanship. Join us in our journey to make eco-friendly living a beautiful and accessible part of everyday life.
+              </p>
+            </div>
+
+            <div className="pt-4 border-t border-white/20">
+              <p className="text-xl font-medium text-[#dbe1d6] italic leading-relaxed">
+                "You deserve the complete package for sustainable life style, and at Merceque, our efforts are committed to this Eco-Friendly Promise to the world!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Offer */}
+      <section className="w-full px-6 py-16 lg:py-24 bg-neutral-50" id="offerings">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2b4433] text-center mb-16">
+            What We Offer
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-neutral-100 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#dbe1d6] rounded-full flex items-center justify-center mb-6 text-[#2b4433]">
+                <Leaf size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900 mb-3">Eco-Friendly Materials</h3>
+              <p className="text-neutral-600">
+                Bamboo, wood, natural fibers, leaves, stone, and plants thoughtfully sourced for low environmental impact.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-neutral-100 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#dbe1d6] rounded-full flex items-center justify-center mb-6 text-[#2b4433]">
+                <Globe2 size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900 mb-3">Global Craftsmanship</h3>
+              <p className="text-neutral-600">
+                Designed in Montreal, Canada, and ethically handcrafted by talented artisans in India.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-neutral-100 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#dbe1d6] rounded-full flex items-center justify-center mb-6 text-[#2b4433]">
+                <HeartHandshake size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900 mb-3">Corporate Gifting</h3>
+              <p className="text-neutral-600">
+                Unique, customizable corporate gifts designed to reflect your brand's commitment to sustainability.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-neutral-100 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#dbe1d6] rounded-full flex items-center justify-center mb-6 text-[#2b4433]">
+                <ShieldCheck size={32} />
+              </div>
+              <h3 className="text-xl font-bold text-neutral-900 mb-3">Ethical Sourcing</h3>
+              <p className="text-neutral-600">
+                Fair wages and responsible practices guaranteed through our dedicated procurement office.
+              </p>
+            </div>
+          </div>
+          
+          <div className="mt-16 text-center">
+            <Link 
+              href="/our-products" 
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#2b4433] text-white font-bold rounded-full hover:bg-[#1f3125] transition-colors"
+            >
+              Explore Our Collection
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

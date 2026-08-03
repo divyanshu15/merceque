@@ -4,139 +4,80 @@
     "name": "Bamboo Combs",
     "handle": "bamboo-combs",
     "price": "$2.94",
-    "description": "Upgrade your haircare routine with our eco-conscious Bamboo Combs, available in tw...",
+    "description": "<p>Upgrade your haircare routine with our eco-conscious Bamboo Combs, available in tw</p><p>This premium eco-friendly product is designed to help you live a more sustainable lifestyle without compromising on quality or aesthetics.</p><ul><li><strong>Eco-conscious:</strong> Made from natural materials</li><li><strong>Durable:</strong> Built to last</li><li><strong>Zero-waste packaging:</strong> Good for you and the planet</li></ul>",
     "image": "/product/bamboo-combs/1.png",
     "images": [
       "/product/bamboo-combs/1.png",
       "/product/bamboo-combs/2.png"
     ],
-    "quantity": 10
+    "quantity": 10,
+    "category": "individual"
   },
   {
     "id": 7891802947641,
     "name": "Bamboo Pens",
     "handle": "bamboo-pens",
     "price": "$2.04",
-    "description": "Write with purpose using our eco-friendly Bamboo Pens, available in smooth blue ...",
-    "image": "/product/bamboo-pens/1.png",
+    "description": "<p>Write&nbsp;with&nbsp;purpose&nbsp;using&nbsp;our&nbsp;eco-friendly&nbsp;Bamboo&nbsp;Pens,&nbsp;available&nbsp;in&nbsp;smooth&nbsp;blue</p><p>This&nbsp;premium&nbsp;eco-friendly&nbsp;product&nbsp;is&nbsp;designed&nbsp;to&nbsp;help&nbsp;you&nbsp;live&nbsp;a&nbsp;more&nbsp;sustainable&nbsp;lifestyle&nbsp;without&nbsp;compromising&nbsp;on&nbsp;quality&nbsp;or&nbsp;aesthetics.</p><ul><li><strong>Eco-conscious:</strong>&nbsp;Made&nbsp;from&nbsp;natural&nbsp;materials</li><li><strong>Durable:</strong>&nbsp;Built&nbsp;to&nbsp;last</li><li><strong>Zero-waste&nbsp;packaging:</strong>&nbsp;Good&nbsp;for&nbsp;you&nbsp;and&nbsp;the&nbsp;planet</li></ul>",
+    "image": "/uploads/1785669577421-206421423-ChatGPTImageAug22026044925PM.png",
     "images": [
       "/product/bamboo-pens/1.png",
       "/product/bamboo-pens/2.png"
     ],
-    "quantity": 10
+    "quantity": 10,
+    "category": "individual"
   },
   {
     "id": 7891781746745,
     "name": "Bamboo pencil box",
     "handle": "bamboo-pencil-box",
     "price": "$8.94",
-    "description": "Organize your stationery in style with our sleek Bamboo Pencil Box — a perfect b...",
-    "image": "/product/bamboo-pencil-box/1.png",
+    "description": "<p>Organize&nbsp;your&nbsp;stationery&nbsp;in&nbsp;style&nbsp;with&nbsp;our&nbsp;sleek&nbsp;Bamboo&nbsp;Pencil&nbsp;Box&nbsp;—&nbsp;a&nbsp;perfect&nbsp;b</p><p>This&nbsp;premium&nbsp;eco-friendly&nbsp;product&nbsp;is&nbsp;designed&nbsp;to&nbsp;help&nbsp;you&nbsp;live&nbsp;a&nbsp;more&nbsp;sustainable&nbsp;lifestyle&nbsp;without&nbsp;compromising&nbsp;on&nbsp;quality&nbsp;or&nbsp;aesthetics.</p><ul><li><strong>Eco-conscious:</strong>&nbsp;Made&nbsp;from&nbsp;natural&nbsp;materials</li><li><strong>Durable:</strong>&nbsp;Built&nbsp;to&nbsp;last</li><li><strong>Zero-waste&nbsp;packaging:</strong>&nbsp;Good&nbsp;for&nbsp;you&nbsp;and&nbsp;the&nbsp;planet</li></ul>",
+    "image": "/uploads/1785669524373-642083435-ChatGPTImageAug22026044822PM.png",
     "images": [
       "/product/bamboo-pencil-box/1.png",
       "/product/bamboo-pencil-box/2.png"
     ],
-    "quantity": 10
-  },
-  {
-    "id": 7891591430201,
-    "name": "Eco-Friendly Bamboo Containers",
-    "handle": "eco-friendly-bamboo-containers",
-    "price": "$8.94",
-    "description": "Organize your space responsibly with our stylish bamboo containers. Crafted from...",
-    "image": "/product/eco-friendly-bamboo-containers/1.png",
-    "images": [
-      "/product/eco-friendly-bamboo-containers/1.png",
-      "/product/eco-friendly-bamboo-containers/2.png",
-      "/product/eco-friendly-bamboo-containers/3.png",
-      "/product/eco-friendly-bamboo-containers/4.png"
-    ],
-    "quantity": 10
-  },
-  {
-    "id": 7875173384249,
-    "name": "Bamboo Beer Mugs – Versatile & Eco-Friendly",
-    "handle": "bamboo-beer-mugs-versatile-eco-friendly",
-    "price": "$14.94",
-    "description": "Enjoy your favorite drinks responsibly with our Bamboo Beer Mugs, crafted for a ...",
-    "image": "/product/bamboo-beer-mugs-versatile-eco-friendly/1.png",
-    "images": [
-      "/product/bamboo-beer-mugs-versatile-eco-friendly/1.png",
-      "/product/bamboo-beer-mugs-versatile-eco-friendly/2.png"
-    ],
-    "quantity": 10
-  },
-  {
-    "id": 7875156934713,
-    "name": "Premium Bamboo Corporate Gift Set",
-    "handle": "premium-bamboo-corporate-gift-set",
-    "price": "$49.94",
-    "description": "Elevate your corporate gifting with our Eco-conscious Corporate Gifts Collection, ...",
-    "image": "/product/premium-bamboo-corporate-gift-set/1.png",
-    "images": [
-      "/product/premium-bamboo-corporate-gift-set/1.png"
-    ],
-    "quantity": 10
-  },
-  {
-    "id": 7873500839993,
-    "name": "Bamboo Tea & Coffee Cup set with Trey",
-    "handle": "bamboo-tea-coffee-cup-with-tray-set",
-    "price": "$28.94",
-    "description": "Elevate your tea or coffee moments with our Bamboo Tea &amp; Coffee Cup and Tray...",
-    "image": "/product/bamboo-tea-coffee-cup-with-tray-set/1.png",
-    "images": [
-      "/product/bamboo-tea-coffee-cup-with-tray-set/1.png",
-      "/product/bamboo-tea-coffee-cup-with-tray-set/2.jpg"
-    ],
-    "quantity": 10
-  },
-  {
-    "id": 7873498251321,
-    "name": "Bamboo Cotton Buds – Pack of 75",
-    "handle": "bamboo-cotton-buds-pack-of-75-eco-friendly-biodegradable",
-    "price": "$2.94",
-    "description": "Make the switch to eco-conscious self-care with our Bamboo Ear Buds – the perfect ...",
-    "image": "/product/bamboo-cotton-buds-pack-of-75-eco-friendly-biodegradable/1.png",
-    "images": [
-      "/product/bamboo-cotton-buds-pack-of-75-eco-friendly-biodegradable/1.png"
-    ],
-    "quantity": 10
+    "quantity": 10,
+    "category": "individual"
   },
   {
     "id": 7866597802041,
     "name": "Bamboo Toothbrush",
     "handle": "bamboo-toothbrush",
     "price": "$5.94",
-    "description": "Upgrade your oral care with our eco-friendly Bamboo Toothbrushes! Designed for a...",
-    "image": "/product/bamboo-toothbrush/1.png",
+    "description": "<p>Upgrade&nbsp;your&nbsp;oral&nbsp;care&nbsp;with&nbsp;our&nbsp;eco-friendly&nbsp;Bamboo&nbsp;Toothbrushes!&nbsp;Designed&nbsp;for&nbsp;a</p><p>This&nbsp;premium&nbsp;eco-friendly&nbsp;product&nbsp;is&nbsp;designed&nbsp;to&nbsp;help&nbsp;you&nbsp;live&nbsp;a&nbsp;more&nbsp;sustainable&nbsp;lifestyle&nbsp;without&nbsp;compromising&nbsp;on&nbsp;quality&nbsp;or&nbsp;aesthetics.</p><ul><li><strong>Eco-conscious:</strong>&nbsp;Made&nbsp;from&nbsp;natural&nbsp;materials</li><li><strong>Durable:</strong>&nbsp;Built&nbsp;to&nbsp;last</li><li><strong>Zero-waste&nbsp;packaging:</strong>&nbsp;Good&nbsp;for&nbsp;you&nbsp;and&nbsp;the&nbsp;planet</li></ul>",
+    "image": "/uploads/1785669593195-176126080-DSC08095.jpeg",
     "images": [
       "/product/bamboo-toothbrush/1.png",
       "/product/bamboo-toothbrush/2.png",
       "/product/bamboo-toothbrush/3.jpg",
-      "/product/bamboo-toothbrush/4.jpg"
+      "/product/bamboo-toothbrush/4.jpg",
+      "/uploads/1785669395439-725599475-ChatGPTImageAug22026044600PM.png"
     ],
-    "quantity": 10
+    "quantity": 10,
+    "category": "individual"
   },
   {
     "id": 7856276013113,
-    "name": "Natural Loofah - Your Eco-conscious Skincare",
+    "name": "Natural Loofah",
     "handle": "natural-loofah-set-natural-skincare-duo",
     "price": "$5.94",
-    "description": "Pamper your skin and the planet with the Merceque's Natural Loofah Set! This eco...",
+    "description": "<p>Pamper&nbsp;your&nbsp;skin&nbsp;and&nbsp;the&nbsp;planet&nbsp;with&nbsp;the&nbsp;Merceque&#39;s&nbsp;Natural&nbsp;Loofah&nbsp;Set!&nbsp;This&nbsp;eco</p><p>This&nbsp;premium&nbsp;eco-friendly&nbsp;product&nbsp;is&nbsp;designed&nbsp;to&nbsp;help&nbsp;you&nbsp;live&nbsp;a&nbsp;more&nbsp;sustainable&nbsp;lifestyle&nbsp;without&nbsp;compromising&nbsp;on&nbsp;quality&nbsp;or&nbsp;aesthetics.</p><ul><li><strong>Eco-conscious:</strong>&nbsp;Made&nbsp;from&nbsp;natural&nbsp;materials</li><li><strong>Durable:</strong>&nbsp;Built&nbsp;to&nbsp;last</li><li><strong>Zero-waste&nbsp;packaging:</strong>&nbsp;Good&nbsp;for&nbsp;you&nbsp;and&nbsp;the&nbsp;planet</li></ul>",
     "image": "/product/natural-loofah-set-natural-skincare-duo/1.png",
     "images": [
       "/product/natural-loofah-set-natural-skincare-duo/1.png",
       "/product/natural-loofah-set-natural-skincare-duo/2.png"
     ],
-    "quantity": 10
+    "quantity": 10,
+    "category": "individual"
   },
   {
     "id": 7856269131833,
-    "name": "EcoFriendly Bamboo Coffee Mug - Eco-conscious Sippping in Style",
+    "name": "Bamboo Coffee Mug",
     "handle": "ecofriendly-bamboo-coffee-mug-natural-sippping-in-style",
     "price": "$24.97",
-    "description": "Start your day responsibly with the EcoFriendly Bamboo Coffee Mug! Available in ...",
+    "description": "<p>Start&nbsp;your&nbsp;day&nbsp;responsibly&nbsp;with&nbsp;the&nbsp;EcoFriendly&nbsp;Bamboo&nbsp;Coffee&nbsp;Mug!&nbsp;Available&nbsp;in</p><p>This&nbsp;premium&nbsp;eco-friendly&nbsp;product&nbsp;is&nbsp;designed&nbsp;to&nbsp;help&nbsp;you&nbsp;live&nbsp;a&nbsp;more&nbsp;sustainable&nbsp;lifestyle&nbsp;without&nbsp;compromising&nbsp;on&nbsp;quality&nbsp;or&nbsp;aesthetics.</p><ul><li><strong>Eco-conscious:</strong>&nbsp;Made&nbsp;from&nbsp;natural&nbsp;materials</li><li><strong>Durable:</strong>&nbsp;Built&nbsp;to&nbsp;last</li><li><strong>Zero-waste&nbsp;packaging:</strong>&nbsp;Good&nbsp;for&nbsp;you&nbsp;and&nbsp;the&nbsp;planet</li></ul>",
     "image": "/product/ecofriendly-bamboo-coffee-mug-natural-sippping-in-style/1.png",
     "images": [
       "/product/ecofriendly-bamboo-coffee-mug-natural-sippping-in-style/1.png",
@@ -145,79 +86,96 @@
       "/product/ecofriendly-bamboo-coffee-mug-natural-sippping-in-style/4.png",
       "/product/ecofriendly-bamboo-coffee-mug-natural-sippping-in-style/5.png"
     ],
-    "quantity": 10
+    "quantity": 10,
+    "category": "individual"
   },
   {
     "id": 7856266641465,
-    "name": "EcoFriendly Bamboo Water Bottle - Eco-conscious & Stylish Hydration",
+    "name": "Bamboo Water Bottle ",
     "handle": "ecofriendly-bamboo-water-bottle-natural-stylish-hydration",
     "price": "$29.94",
-    "description": "Stay hydrated in style with the EcoZen Bamboo Water Bottle! Crafted from eco-fri...",
+    "description": "<p>Stay&nbsp;hydrated&nbsp;in&nbsp;style&nbsp;with&nbsp;the&nbsp;EcoZen&nbsp;Bamboo&nbsp;Water&nbsp;Bottle!&nbsp;Crafted&nbsp;from&nbsp;eco-fri</p><p>This&nbsp;premium&nbsp;eco-friendly&nbsp;product&nbsp;is&nbsp;designed&nbsp;to&nbsp;help&nbsp;you&nbsp;live&nbsp;a&nbsp;more&nbsp;sustainable&nbsp;lifestyle&nbsp;without&nbsp;compromising&nbsp;on&nbsp;quality&nbsp;or&nbsp;aesthetics.</p><ul><li><strong>Eco-conscious:</strong>&nbsp;Made&nbsp;from&nbsp;natural&nbsp;materials</li><li><strong>Durable:</strong>&nbsp;Built&nbsp;to&nbsp;last</li><li><strong>Zero-waste&nbsp;packaging:</strong>&nbsp;Good&nbsp;for&nbsp;you&nbsp;and&nbsp;the&nbsp;planet</li></ul>",
     "image": "/product/ecofriendly-bamboo-water-bottle-natural-stylish-hydration/1.png",
     "images": [
       "/product/ecofriendly-bamboo-water-bottle-natural-stylish-hydration/1.png",
       "/product/ecofriendly-bamboo-water-bottle-natural-stylish-hydration/2.png",
       "/product/ecofriendly-bamboo-water-bottle-natural-stylish-hydration/3.png"
     ],
-    "quantity": 10
+    "quantity": 10,
+    "category": "individual"
   },
   {
-    "id": 7856263364665,
-    "name": "EcoFriendly Bamboo Gift Box",
-    "handle": "ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set",
-    "price": "$54.88",
-    "description": "The Merceque Bamboo Gift Box is the perfect eco-friendly duo for eco-conscious sip...",
-    "image": "/product/ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set/1.png",
+    "id": 99901,
+    "name": "Bamboo Basket",
+    "handle": "bamboo-basket",
+    "price": ".94",
+    "description": "<p>Add a touch of rustic charm to your home with our <strong>Bamboo Basket</strong>.</p><p>Hand-woven by skilled artisans, this basket is as durable as it is beautiful. Perfect for organizing laundry, storing blankets, or displaying as a centerpiece.</p><ul><li><strong>Hand-Woven Craftsmanship:</strong> Each piece is unique</li><li><strong>Breathable Design:</strong> Prevents moisture buildup</li><li><strong>Sturdy & Lightweight:</strong> Easy to carry and move around</li></ul>",
+    "image": "",
+    "images": [],
+    "quantity": 10,
+    "category": "individual"
+  },
+  {
+    "id": 99902,
+    "name": "Carry Bag (Made from grass)",
+    "handle": "carry-bag-grass",
+    "price": ".94",
+    "description": "Sustainable carry bag made from natural grass, perfect for grocery shopping.",
+    "image": "",
+    "images": [],
+    "quantity": 10,
+    "category": "individual"
+  },
+  {
+    "id": 99903,
+    "name": "Corporate Kit",
+    "handle": "corporate-kit",
+    "price": ".94",
+    "description": "<p>Our&nbsp;<strong>Corporate&nbsp;Kit</strong>&nbsp;is&nbsp;the&nbsp;ultimate&nbsp;eco-friendly&nbsp;gifting&nbsp;solution&nbsp;for&nbsp;modern&nbsp;businesses.</p><p>Show&nbsp;your&nbsp;employees&nbsp;and&nbsp;clients&nbsp;that&nbsp;you&nbsp;care&nbsp;about&nbsp;the&nbsp;planet&nbsp;with&nbsp;this&nbsp;thoughtfully&nbsp;curated&nbsp;selection&nbsp;of&nbsp;premium&nbsp;sustainable&nbsp;goods.&nbsp;Designed&nbsp;to&nbsp;impress,&nbsp;this&nbsp;kit&nbsp;combines&nbsp;functionality&nbsp;with&nbsp;a&nbsp;zero-waste&nbsp;philosophy.</p><ul><li><strong>Sustainable&nbsp;Materials:</strong>&nbsp;100%&nbsp;bamboo,&nbsp;wood,&nbsp;and&nbsp;natural&nbsp;grass</li><li><strong>Brandable:</strong>&nbsp;Can&nbsp;be&nbsp;customized&nbsp;with&nbsp;your&nbsp;company&nbsp;logo</li><li><strong>Contents:</strong>&nbsp;Bamboo&nbsp;flask,&nbsp;notebook,&nbsp;pen,&nbsp;and&nbsp;coffee&nbsp;mug</li></ul><p><em>Perfect&nbsp;for&nbsp;onboarding,&nbsp;holiday&nbsp;gifting,&nbsp;and&nbsp;corporate&nbsp;milestones.</em></p>",
+    "image": "/images/new/bamboo_thermos_cups.jpeg",
     "images": [
-      "/product/ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set/1.png",
-      "/product/ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set/2.png",
-      "/product/ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set/3.png",
-      "/product/ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set/4.png",
-      "/product/ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set/5.png",
-      "/product/ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set/6.png",
-      "/product/ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set/7.png",
-      "/product/ecofriendly-bamboo-gift-box-water-bottle-coffee-mug-set/8.png"
+      "/images/new/bamboo_thermos_cups.jpeg"
     ],
-    "quantity": 10
+    "quantity": 10,
+    "category": "combo"
   },
   {
-    "id": 7856247799865,
-    "name": "EcoFriendly Bamboo Trio - Eco-conscious Water Bottle, Tea Cup & Storage Container",
-    "handle": "ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container",
-    "price": "$54.94",
-    "description": "Discover the EcoFriendly Bamboo Trio – a harmonious blend of eco-conscious desig...",
-    "image": "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/1.jpg",
-    "images": [
-      "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/1.jpg",
-      "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/2.png",
-      "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/3.png",
-      "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/4.jpg",
-      "/product/ecofriendly-bamboo-trio-natural-water-bottle-tea-cup-storage-container/5.png"
-    ],
-    "quantity": 10
-  },
-  {
-    "id": 7856229646393,
-    "name": "Bamboo Mug Gift Set - Eco-conscious & Stylish",
-    "handle": "ecofriendly-bamboo-mug-gift-set-natural-stylish",
-    "price": "$39.94",
-    "description": "Elevate your sipping experience with the EcoZen Bamboo Mug Gift Set – the perfec...",
-    "image": "/product/ecofriendly-bamboo-mug-gift-set-natural-stylish/1.jpg",
-    "images": [
-      "/product/ecofriendly-bamboo-mug-gift-set-natural-stylish/1.jpg"
-    ],
-    "quantity": 10
-  },
-  {
-    "id": 7856218996793,
+    "id": 99904,
     "name": "Personal Care Kit",
-    "handle": "personal-care-kit",
-    "price": "$44.94",
-    "description": "Upgrade your daily routine with our Eco-Friendly Personal Care Kit, designed for...",
-    "image": "/product/personal-care-kit/1.png",
+    "handle": "personal-care-kit-new",
+    "price": ".94",
+    "description": "Complete personal care essentials made from sustainable materials.",
+    "image": "/images/new/bamboo_bath_kit.jpg",
     "images": [
-      "/product/personal-care-kit/1.png"
+      "/images/new/bamboo_bath_kit.jpg"
     ],
-    "quantity": 10
+    "quantity": 10,
+    "category": "combo"
+  },
+  {
+    "id": 99905,
+    "name": "Bamboo Dom Kit",
+    "handle": "bamboo-dom-kit",
+    "price": ".94",
+    "description": "<p>The&nbsp;<strong>Bamboo&nbsp;Dom&nbsp;Kit</strong>&nbsp;is&nbsp;a&nbsp;beautifully&nbsp;aesthetic&nbsp;collection&nbsp;for&nbsp;your&nbsp;home&nbsp;or&nbsp;office.</p><p>Featuring&nbsp;rich,&nbsp;natural&nbsp;textures&nbsp;and&nbsp;impeccable&nbsp;craftsmanship,&nbsp;this&nbsp;kit&nbsp;brings&nbsp;a&nbsp;touch&nbsp;of&nbsp;nature&nbsp;indoors.&nbsp;It’s&nbsp;the&nbsp;perfect&nbsp;blend&nbsp;of&nbsp;utility&nbsp;and&nbsp;eco-friendly&nbsp;design.</p><ul><li><strong>Premium&nbsp;Finish:</strong>&nbsp;Polished&nbsp;natural&nbsp;bamboo</li><li><strong>Versatile&nbsp;Use:</strong>&nbsp;Ideal&nbsp;for&nbsp;desk&nbsp;organization&nbsp;or&nbsp;home&nbsp;decor</li><li><strong>Eco-Friendly:</strong>&nbsp;100%&nbsp;biodegradable&nbsp;and&nbsp;sustainably&nbsp;sourced</li></ul>",
+    "image": "/uploads/1785669432550-511187974-ChatGPTImageAug22026044600PM.png",
+    "images": [
+      "/images/new/wooden_cups.jpeg"
+    ],
+    "quantity": 10,
+    "category": "combo"
+  },
+  {
+    "id": 99906,
+    "name": "Coffee Kit",
+    "handle": "coffee-kit",
+    "price": ".94",
+    "description": "<p>The <strong>Coffee Kit</strong> is every sustainable coffee lover's dream.</p><p>Enjoy your favorite brew on the go without contributing to single-use plastic waste. This kit keeps your beverages at the perfect temperature while keeping your conscience clean.</p><ul><li><strong>Insulated Mug:</strong> Keeps drinks hot or cold for hours</li><li><strong>Bamboo Exterior:</strong> Sleek, natural, and comfortable to hold</li><li><strong>Spill-proof Lid:</strong> Perfect for commutes and travel</li></ul>",
+    "image": "/images/new/coffee_mug.jpeg",
+    "images": [
+      "/images/new/coffee_mug.jpeg"
+    ],
+    "quantity": 10,
+    "category": "combo"
   }
 ]

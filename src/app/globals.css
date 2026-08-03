@@ -5,8 +5,8 @@
 :root {
   --background: #efecec; /* Light mode background */
   --foreground: #121212; /* Light mode text */
-  --color-primary: #37A161; /* Natural bamboo green */
-  --color-primary-dark: #37A161; /* Deep organic green */
+  --color-primary: #385642; /* Natural bamboo green */
+  --color-primary-dark: #2b4433; /* Deep organic green */
   --color-accent: #E8C396; /* Bamboo light */
   --color-accent-dark: #D4A373; /* Bamboo dark */
   --color-border-subtle: #E0E0E0;
@@ -29,6 +29,7 @@
   --color-border-subtle: var(--color-border-subtle);
   --color-border-nature: var(--color-border-nature);
   --font-sans: var(--font-inter);
+  --font-cursive: var(--font-playfair), "Playfair Display", serif;
 }
 
 body {

@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { Building2, GraduationCap, Store, School, ArrowRight } from "lucide-react";
+import { CatalogForm } from "@/components/CatalogForm";
 
 export const metadata: Metadata = {
   title: "For Businesses | Merceque",
@@ -10,119 +12,158 @@ export const metadata: Metadata = {
 
 export default function ForBusinessesPage() {
   return (
-    <main className="flex min-h-screen flex-col w-full pt-32 pb-24">
+    <main className="flex min-h-screen flex-col w-full pb-24 bg-[#d9d0c1]">
       {/* Hero Section */}
-      <section className="px-6 mb-32 relative z-10">
-        <div className="max-w-7xl mx-auto w-full">
-          <div className="flex flex-col items-start gap-6 max-w-3xl mb-24 animate-in fade-in slide-in-from-bottom-8 duration-700">
-            <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tight text-foreground">
-              Partner with <span className="text-primary italic font-serif">Nature</span>
+      <section className="relative pt-32 pb-24 px-6 overflow-hidden">
+        <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12 relative z-10">
+          <div className="flex-1 flex flex-col items-start gap-6 animate-in fade-in slide-in-from-bottom-8 duration-700 mt-10">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-[#2b4433] leading-tight">
+              Eco-Gift Boxes for <br/>
+              <span className="text-[#486350] italic font-serif capitalize">Businesses & Institutions</span>
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-400">
-              Elevate your brand with eco-conscious, custom-branded bamboo products. Ideal for corporate gifting, hospitality, and retail wholesale.
+            <p className="text-lg text-neutral-700 max-w-xl">
+              Welcome to our Wholesale Portal — where your values meet ours. Whether you're a university looking to appreciate faculty, a corporate office planning holiday gifts, or a retail store aiming to offer sustainable gifting options -- our Eco-Gift Boxes help your organization demonstrate environmental responsibility while maintaining premium presentation standards.
             </p>
-            <Link href="/contact">
-              <Button className="mt-4 px-8 py-4 text-lg">Request Wholesale Catalog</Button>
-            </Link>
+            <div className="flex flex-wrap gap-4 mt-4">
+              <Link href="#catalog-request">
+                <Button className="px-8 py-4 text-lg bg-[#2b4433] hover:bg-[#1a2b1f] text-white rounded-md">Browse Our Eco-Gift collections</Button>
+              </Link>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300">
-            <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-3xl p-8 backdrop-blur-sm transition-transform hover:-translate-y-2 duration-300">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Corporate Gifting</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Show your clients and employees you care about the planet with premium, zero-plastic bamboo gifts. Custom engraving available.
-              </p>
-            </div>
-            <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-3xl p-8 backdrop-blur-sm transition-transform hover:-translate-y-2 duration-300 delay-100">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Hospitality Solutions</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Upgrade your hotel or restaurant with durable, eco-friendly bamboo amenities, from custom combs to elegant tableware.
-              </p>
-            </div>
-            <div className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-3xl p-8 backdrop-blur-sm transition-transform hover:-translate-y-2 duration-300 delay-200">
-              <h3 className="text-2xl font-bold text-foreground mb-4">Retail Wholesale</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Stock Merceque products in your store. Enjoy competitive wholesale pricing, low minimum order quantities, and dedicated support.
-              </p>
-            </div>
+          <div id="catalog-request-form" className="w-full max-w-md lg:w-[450px] animate-in fade-in slide-in-from-right-8 duration-700 delay-300 mt-10">
+            <CatalogForm />
           </div>
         </div>
+        
+        {/* Background Decorative Element */}
+        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/3 w-[800px] h-[800px] bg-[#8ba380]/20 rounded-full blur-3xl -z-10" />
       </section>
 
-      {/* Why Partner Section */}
-      <section className="px-6 py-24 bg-black/5 dark:bg-white/5 border-y border-black/10 dark:border-white/10">
-        <div className="max-w-7xl mx-auto w-full">
-          <div className="flex flex-col md:flex-row gap-16 items-center">
-            <div className="md:w-1/2 flex flex-col gap-6">
-              <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground">
-                Why Choose Merceque?
-              </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                When you partner with Merceque, you are investing in high-quality, eco-conscious solutions that align with modern consumer values. We make the transition to eco-friendly products seamless and beautiful.
-              </p>
-              <ul className="flex flex-col gap-4 mt-4">
-                {[
-                  "Premium Quality Guarantee",
-                  "Low Minimum Order Quantities (MOQ)",
-                  "Custom Laser Engraving & Branding",
-                  "Dedicated Account Manager",
-                  "Global Shipping & Logistics Support"
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-foreground font-medium">
-                    <CheckCircle2 className="text-primary w-6 h-6 flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="md:w-1/2 bg-black/10 dark:bg-white/10 rounded-3xl h-[400px] w-full flex items-center justify-center p-8 border border-black/10 dark:border-white/10 shadow-inner">
-               {/* Placeholder for an image or branded graphic */}
-               <div className="text-center">
-                 <span className="text-6xl mb-4 block">🏢</span>
-                 <h3 className="text-2xl font-bold text-foreground">Eco-conscious Business</h3>
-               </div>
-            </div>
-          </div>
+      {/* Why Choose Our Eco-Gift Boxes? */}
+      <section className="relative px-6 py-32 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image src="/images/new/bamboo_bath_kit.jpg" alt="Bamboo Eco-Gift Box" fill priority sizes="100vw" className="object-cover object-center" />
+          <div className="absolute inset-0 bg-[#d9d0c1]/80" />
         </div>
-      </section>
-
-      {/* How It Works Section */}
-      <section className="px-6 py-24">
-        <div className="max-w-7xl mx-auto w-full">
-          <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground mb-16 text-center">
-            How It Works
+        <div className="max-w-7xl mx-auto w-full relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight text-[#2b4433] mb-16 text-center">
+            Why Choose Our Eco-Gift Boxes?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { step: "01", title: "Inquiry", desc: "Contact our team with your business needs and estimated volumes." },
-              { step: "02", title: "Consultation", desc: "We'll discuss customization options, pricing, and provide samples." },
-              { step: "03", title: "Production", desc: "Once approved, we begin manufacturing and custom branding your order." },
-              { step: "04", title: "Delivery", desc: "We handle the logistics to ensure your order arrives safely and on time." }
-            ].map((item, idx) => (
-              <div key={idx} className="flex flex-col gap-4 group">
-                <div className="text-5xl font-black text-primary/30 group-hover:text-primary transition-colors duration-500">
-                  {item.step}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="flex flex-col gap-3 p-8 bg-white rounded-2xl">
+              <h3 className="text-xl font-bold text-[#2b4433]">Sustainable & Ethical</h3>
+              <p className="text-neutral-600">All items are responsibly sourced and eco-conscious.</p>
+            </div>
+            <div className="flex flex-col gap-3 p-8 bg-white rounded-2xl">
+              <h3 className="text-xl font-bold text-[#2b4433]">Customizable Packaging</h3>
+              <p className="text-neutral-600">Add your brand/logo or a personalized message.</p>
+            </div>
+            <div className="flex flex-col gap-3 p-8 bg-white rounded-2xl">
+              <h3 className="text-xl font-bold text-[#2b4433]">Curated for Impact</h3>
+              <p className="text-neutral-600">Each box is designed with purpose — ideal for staff recognition, client appreciation, or retail resale.</p>
+            </div>
+            <div className="flex flex-col gap-3 p-8 bg-white rounded-2xl">
+              <h3 className="text-xl font-bold text-[#2b4433]">Zero-Waste Philosophy</h3>
+              <p className="text-neutral-600">Minimal packaging. Maximum thoughtfulness.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Serve & Image */}
+      <section className="px-6 py-24 bg-[#2b4433] text-white">
+        <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12">
+          {/* Left Column: Heading and Grid */}
+          <div className="flex-1 w-full">
+            <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight text-white mb-12">
+              Who We Serve
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="flex items-start gap-4 p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/10 hover:bg-white/20 transition-colors">
+                <GraduationCap className="w-8 h-8 text-[#dbe1d6] shrink-0" />
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Universities & Colleges</h3>
+                  <p className="text-white/80 text-sm">Welcome kits, faculty/staff gifts, student incentives</p>
                 </div>
-                <h3 className="text-xl font-bold text-foreground uppercase">{item.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400">{item.desc}</p>
               </div>
-            ))}
+              <div className="flex items-start gap-4 p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/10 hover:bg-white/20 transition-colors">
+                <Building2 className="w-8 h-8 text-[#dbe1d6] shrink-0" />
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Corporate Offices</h3>
+                  <p className="text-white/80 text-sm">Employee gifts, onboarding kits, holiday gifting</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4 p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/10 hover:bg-white/20 transition-colors">
+                <Store className="w-8 h-8 text-[#dbe1d6] shrink-0" />
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Retail Stores</h3>
+                  <p className="text-white/80 text-sm">Eco-lifestyle products for resale</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4 p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/10 hover:bg-white/20 transition-colors">
+                <School className="w-8 h-8 text-[#dbe1d6] shrink-0" />
+                <div>
+                  <h3 className="text-xl font-bold mb-1">Educational Institutions</h3>
+                  <p className="text-white/80 text-sm">Green-themed prizes or fundraiser gifts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Right Column: Image */}
+          <div className="w-full lg:w-[500px] xl:w-[600px] h-[400px] md:h-[500px] relative rounded-3xl overflow-hidden shadow-2xl shrink-0">
+            <Image src="/images/new/wooden_cups.jpeg" alt="Wooden Cups Collection" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover object-center" />
+          </div>
+        </div>
+      </section>
+
+      {/* Order Details */}
+      <section className="px-6 py-24 bg-[#d2c9b9]">
+        <div className="max-w-4xl mx-auto w-full">
+          <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight text-[#2b4433] mb-12 text-center">
+            Order Details
+          </h2>
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-neutral-200">
+            <ul className="space-y-6">
+              <li className="flex flex-col sm:flex-row sm:items-start gap-2 border-b border-neutral-100 pb-6">
+                <span className="font-bold text-[#2b4433] min-w-[200px] text-lg">Minimum Order Quantity:</span>
+                <span className="text-neutral-700 text-lg">40 Eco-Gift Boxes <br/><span className="text-neutral-500 text-base">50 for individual products</span></span>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-start gap-2 border-b border-neutral-100 pb-6">
+                <span className="font-bold text-[#2b4433] min-w-[200px] text-lg">Customization Available:</span>
+                <span className="text-neutral-700 text-lg">Yes <br/><span className="text-neutral-500 text-base">(MOQ for branded packaging may vary)</span></span>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-start gap-2 border-b border-neutral-100 pb-6">
+                <span className="font-bold text-[#2b4433] min-w-[200px] text-lg">Shipping:</span>
+                <span className="text-neutral-700 text-lg">Canada & USA <br/><span className="text-neutral-500 text-base">Express & Standard options available</span></span>
+              </li>
+              <li className="flex flex-col sm:flex-row sm:items-start gap-2">
+                <span className="font-bold text-[#2b4433] min-w-[200px] text-lg">Lead Time:</span>
+                <span className="text-neutral-700 text-lg">10-30 business days <br/><span className="text-neutral-500 text-base">(depending on quantity & customization)</span></span>
+              </li>
+            </ul>
+            <div className="mt-12 p-6 bg-[#dbe1d6]/50 rounded-xl text-center">
+              <p className="text-lg font-medium text-[#2b4433]">We design in Canada and source our products from India.</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="px-6 pt-12">
-        <div className="max-w-5xl mx-auto w-full bg-primary/10 border border-primary/20 rounded-3xl p-12 text-center flex flex-col items-center gap-8">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground">Ready to go green?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
-            Let's work together to eliminate plastic waste in your industry. Reach out today for our wholesale pricing catalog.
+      <section className="px-6 py-24 bg-transparent">
+        <div className="max-w-4xl mx-auto w-full text-center flex flex-col items-center gap-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#2b4433] mb-4">Request Our Wholesale Catalogue</h2>
+          <p className="text-xl text-neutral-600 max-w-2xl">
+            Want to explore our latest catalogue with pricing, product details, and customization options?
           </p>
-          <Link href="/contact">
-            <Button className="flex items-center gap-2 px-8 py-4 text-lg">
-              Contact Sales Team <ArrowRight className="w-4 h-4" />
-            </Button>
-          </Link>
+          <div className="mt-8">
+            <Link href="#catalog-request-form">
+              <Button className="px-10 py-8 text-xl font-medium bg-[#2b4433] hover:bg-[#1a2b1f] text-white rounded-2xl shadow-lg transition-transform hover:scale-105">
+                Request Catalogue
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </main>

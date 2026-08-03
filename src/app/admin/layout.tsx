@@ -16,11 +16,16 @@ export default function AdminLayout({
         <nav className="flex flex-col gap-2 flex-grow">
           <Link 
             href="/admin/products" 
-            className="px-4 py-2 rounded-md bg-neutral-100 dark:bg-neutral-800 font-medium text-neutral-900 dark:text-neutral-100"
+            className="px-4 py-2 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 font-medium text-neutral-900 dark:text-neutral-100 transition-colors"
           >
             Products
           </Link>
-          {/* Add more admin links here in the future */}
+          <Link 
+            href="/admin/b2b-orders" 
+            className="px-4 py-2 rounded-md hover:bg-neutral-100 dark:hover:bg-neutral-800 font-medium text-neutral-900 dark:text-neutral-100 transition-colors"
+          >
+            B2B Orders
+          </Link>
         </nav>
         <div className="mt-auto">
           <Link 

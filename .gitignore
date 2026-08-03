@@ -53,3 +53,5 @@ __pycache__/
 *.swp
 *.swo
 
+
+/src/generated/prisma
