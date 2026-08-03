@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export function CollectionsGrid() {
   const collections = [
-    { title: "Corporate Kit", src: "/images/new/bamboo_thermos_cups.jpeg" },
+    { title: "Corporate Kit", src: "/images/new/DSC08034.jpeg" },
     { title: "Personal Care Kit", src: "/images/new/bamboo_bath_kit.jpg" },
     { title: "Bamboo Dom Kit", src: "/images/new/toothbrush.png" },
-    { title: "Coffee Kit", src: "/images/new/coffee_mug.jpeg" },
+    { title: "Coffee Kit", src: "/images/new/bamboo_thermos_box.jpeg" },
   ];
 
   return (
