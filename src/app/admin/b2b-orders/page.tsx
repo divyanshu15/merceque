@@ -30,7 +30,7 @@ export default async function AdminB2BOrdersPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-neutral-200 dark:divide-neutral-800">
-                {orders.map((order) => (
+                {orders.map((order: any) => (
                   <tr key={order.id} className="hover:bg-neutral-50 dark:hover:bg-neutral-800/50 transition-colors">
                     <td className="px-6 py-4 whitespace-nowrap text-sm">{format(new Date(order.createdAt), "MMM d, yyyy")}</td>
                     <td className="px-6 py-4 font-medium">{order.name}</td>

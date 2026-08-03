@@ -27,7 +27,7 @@ export default function ProductForm({ initialData, isNew = false }: ProductFormP
       description: '',
       image: '',
       images: [],
-      category: initialData?.category || 'individual',
+      category: 'individual',
       quantity: 0,
     }
   );
