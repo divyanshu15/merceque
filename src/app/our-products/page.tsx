@@ -10,9 +10,14 @@ export const metadata: Metadata = {
 export const revalidate = 60; // Revalidate the page every 60 seconds
 
 export default async function OurProductsPage() {
-  const products = await prisma.product.findMany({
-    orderBy: { createdAt: 'desc' }
-  });
+  let products: any[] = [];
+  try {
+    products = await prisma.product.findMany({
+      orderBy: { createdAt: 'desc' }
+    });
+  } catch (error) {
+    console.warn("⚠️ WARNING: Could not fetch products (Database likely not configured yet).");
+  }
 
   return (
     <main className="flex min-h-screen flex-col w-full pt-20">

@@ -7,13 +7,18 @@ import { ArrowLeft } from 'lucide-react';
 export const revalidate = 60; // Revalidate every 60 seconds
 
 export async function generateStaticParams() {
-  const products = await prisma.product.findMany({
-    select: { handle: true }
-  });
-  
-  return products.map((product) => ({
-    handle: product.handle,
-  }));
+  try {
+    const products = await prisma.product.findMany({
+      select: { handle: true }
+    });
+    
+    return products.map((product) => ({
+      handle: product.handle,
+    }));
+  } catch (error) {
+    console.warn("⚠️ WARNING: Could not fetch products for static generation (Database likely not configured yet).");
+    return [];
+  }
 }
 
 export default async function ProductPage({ params }: { params: Promise<{ handle: string }> }) {
