@@ -1,10 +1,16 @@
 import { notFound } from 'next/navigation';
-import { products } from '@/data/products';
+import prisma from '@/lib/prisma';
 import { ProductGallery } from '@/components/ProductGallery';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-export function generateStaticParams() {
+export const revalidate = 60; // Revalidate every 60 seconds
+
+export async function generateStaticParams() {
+  const products = await prisma.product.findMany({
+    select: { handle: true }
+  });
+  
   return products.map((product) => ({
     handle: product.handle,
   }));
@@ -12,7 +18,9 @@ export function generateStaticParams() {
 
 export default async function ProductPage({ params }: { params: Promise<{ handle: string }> }) {
   const { handle } = await params;
-  const product = products.find((p) => p.handle === handle);
+  const product = await prisma.product.findUnique({
+    where: { handle }
+  });
 
   if (!product) {
     notFound();

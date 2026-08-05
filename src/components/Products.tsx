@@ -3,17 +3,30 @@
 import React from "react";
 import { Button } from "./ui/Button";
 import Image from "next/image";
-import { products, Product } from "@/data/products";
 import { useRouter } from "next/navigation";
 
+// Define a local Product interface instead of importing from static file
+export interface Product {
+  id: string;
+  name: string;
+  handle: string;
+  price: string;
+  description: string;
+  image: string;
+  images: string[];
+  quantity: number;
+  category: string;
+}
+
 interface ProductsProps {
+  products: Product[];
   limit?: number;
   title?: React.ReactNode;
   category?: "combo" | "individual";
   hidePaddingTop?: boolean;
 }
 
-export function Products({ limit, title, category, hidePaddingTop }: ProductsProps) {
+export function Products({ products, limit, title, category, hidePaddingTop }: ProductsProps) {
   let displayProducts = products;
   if (category) {
     displayProducts = displayProducts.filter(p => p.category === category);
