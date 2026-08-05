@@ -11,13 +11,6 @@ export function Footer() {
         {/* Brand Column */}
         <div className="flex flex-col gap-6 md:w-1/3">
           <Link href="/" className="flex items-center gap-3 group w-fit">
-            <Image
-              src="/logo/merceque-logo-2.png"
-              alt="Merceque Logo"
-              width={48}
-              height={48}
-              className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
-            />
             <span className="text-xl font-bold tracking-widest uppercase text-foreground">
               MERCEQUE
             </span>

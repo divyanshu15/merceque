@@ -18,7 +18,7 @@ export function ViewAllProducts() {
         </h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((p, i) => (
-            <Link href="/our-products" key={i} className="group">
+            <Link href="/our-products" target="_blank" rel="noopener noreferrer" key={i} className="group">
               <div className="relative aspect-square w-full overflow-hidden rounded-md bg-black/5">
                 <Image
                   src={p.src}

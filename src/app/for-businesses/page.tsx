@@ -25,8 +25,8 @@ export default function ForBusinessesPage() {
               Welcome to our Wholesale Portal — where your values meet ours. Whether you're a university looking to appreciate faculty, a corporate office planning holiday gifts, or a retail store aiming to offer sustainable gifting options -- our Eco-Gift Boxes help your organization demonstrate environmental responsibility while maintaining premium presentation standards.
             </p>
             <div className="flex flex-wrap gap-4 mt-4">
-              <Link href="#catalog-request">
-                <Button className="px-8 py-4 text-lg bg-[#2b4433] hover:bg-[#1a2b1f] text-white rounded-md">Browse Our Eco-Gift collections</Button>
+              <Link href="/our-products">
+                <Button className="px-8 py-4 text-lg bg-[#2b4433] hover:bg-[#1a2b1f] text-white rounded-md">Browse Our Eco-Collections</Button>
               </Link>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function ForBusinessesPage() {
               <div className="flex items-start gap-4 p-6 bg-white/10 rounded-2xl backdrop-blur-sm border border-white/10 hover:bg-white/20 transition-colors">
                 <School className="w-8 h-8 text-[#dbe1d6] shrink-0" />
                 <div>
-                  <h3 className="text-xl font-bold mb-1">Educational Institutions</h3>
+                  <h3 className="text-xl font-bold mb-1">Other Organizations</h3>
                   <p className="text-white/80 text-sm">Green-themed prizes or fundraiser gifts</p>
                 </div>
               </div>
@@ -140,12 +140,10 @@ export default function ForBusinessesPage() {
               </li>
               <li className="flex flex-col sm:flex-row sm:items-start gap-2">
                 <span className="font-bold text-[#2b4433] min-w-[200px] text-lg">Lead Time:</span>
-                <span className="text-neutral-700 text-lg">10-30 business days <br/><span className="text-neutral-500 text-base">(depending on quantity & customization)</span></span>
+                <span className="text-neutral-700 text-lg">50-75 days <br/><span className="text-neutral-500 text-base">(depending on quantity & customization)</span></span>
               </li>
             </ul>
-            <div className="mt-12 p-6 bg-[#dbe1d6]/50 rounded-xl text-center">
-              <p className="text-lg font-medium text-[#2b4433]">We design in Canada and source our products from India.</p>
-            </div>
+
           </div>
         </div>
       </section>

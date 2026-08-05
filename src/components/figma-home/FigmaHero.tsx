@@ -8,7 +8,7 @@ export function FigmaHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/new/hero.png"
+          src="/images/new/hero1.png"
           alt="Bamboo Bath Kit"
           fill
           className="object-cover object-center"
@@ -30,17 +30,21 @@ export function FigmaHero() {
       {/* Sub-hero Section */}
       <div className="z-10 w-full px-6 flex flex-col items-center mt-auto">
         <h2 className="text-3xl md:text-5xl lg:text-6xl text-white/95 font-cursive mb-10 drop-shadow-md max-w-3xl mx-auto text-center font-normal tracking-wide">
-          Elevate Your Lifestyle with Sustainable Bamboo & Natural Essentials
+          Elevate your lifestyle with Bamboo and Natural Essentials
         </h2>
         <div className="flex gap-8 flex-wrap justify-center">
           <Link
             href="/our-products"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#486350]/80 backdrop-blur-sm text-white px-10 py-3 rounded-md font-cursive text-2xl md:text-3xl hover:bg-[#385642]/90 transition-colors shadow-md border border-[#5d7a66]/50"
           >
             Shop now
           </Link>
           <Link
             href="/about-us"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#486350]/80 backdrop-blur-sm text-white px-10 py-3 rounded-md font-cursive text-2xl md:text-3xl hover:bg-[#385642]/90 transition-colors shadow-md border border-[#5d7a66]/50"
           >
             Learn more

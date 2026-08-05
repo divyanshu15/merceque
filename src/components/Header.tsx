@@ -14,37 +14,33 @@ export function Header() {
       </div>
       <div className="w-full bg-transparent pt-4 pb-2">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-          <Image
-            src="/logo/merceque-logo-2.png"
-            alt="Merceque Logo"
-            width={48}
-            height={48}
-            className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
-          />
-          <span className="text-4xl font-cursive font-medium text-black/80">
+          <Link href="/" target="_blank" rel="noopener noreferrer" className="flex items-center group">
+          <span className="text-4xl md:text-5xl font-cursive font-bold text-[#1f3125] drop-shadow-sm">
             Merceque
           </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-black/80">
-          <Link href="/" className="hover:text-black transition-colors">
+          <Link href="/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">
             Home
           </Link>
           <Link
             href="/for-businesses"
+            target="_blank" rel="noopener noreferrer"
             className="hover:text-black transition-colors"
           >
             For Businesses
           </Link>
           <Link
             href="/our-products"
+            target="_blank" rel="noopener noreferrer"
             className="hover:text-black transition-colors"
           >
             Our Products
           </Link>
           <Link
             href="/contact"
+            target="_blank" rel="noopener noreferrer"
             className="hover:text-black transition-colors"
           >
             Contact
@@ -52,6 +48,7 @@ export function Header() {
 
           <Link
             href="/about-us"
+            target="_blank" rel="noopener noreferrer"
             className="hover:text-black transition-colors"
           >
             About Us

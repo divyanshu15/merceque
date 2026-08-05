@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export function CollectionsGrid() {
   const collections = [
-    { title: "Corporate Kit", src: "/images/new/DSC08034.jpeg" },
-    { title: "Personal Care Kit", src: "/images/new/bamboo_bath_kit.jpg" },
-    { title: "Bamboo Dom Kit", src: "/images/new/toothbrush.png" },
-    { title: "Coffee Kit", src: "/images/new/bamboo_thermos_box.jpeg" },
+    { title: "Executive Collection", src: "/images/new/DSC08034.jpeg" },
+    { title: "Eco Personal Care Collection", src: "/images/new/bamboo_bath_kit.jpg" },
+    { title: "Student Essentials", src: "/images/new/toothbrush.png" },
+    { title: "Sustainable Travel Essentials", src: "/images/new/bamboo_thermos_box.jpeg" },
   ];
 
   return (
@@ -16,6 +16,8 @@ export function CollectionsGrid() {
         {collections.map((item, i) => (
           <Link
             href="/our-products"
+            target="_blank"
+            rel="noopener noreferrer"
             key={i}
             className="group flex flex-col gap-3"
           >

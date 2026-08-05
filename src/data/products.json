@@ -128,7 +128,7 @@
   },
   {
     "id": 99903,
-    "name": "Corporate Kit",
+    "name": "Executive Collection",
     "handle": "corporate-kit",
     "price": ".94",
     "description": "<p>Our&nbsp;<strong>Corporate&nbsp;Kit</strong>&nbsp;is&nbsp;the&nbsp;ultimate&nbsp;eco-friendly&nbsp;gifting&nbsp;solution&nbsp;for&nbsp;modern&nbsp;businesses.</p><p>Show&nbsp;your&nbsp;employees&nbsp;and&nbsp;clients&nbsp;that&nbsp;you&nbsp;care&nbsp;about&nbsp;the&nbsp;planet&nbsp;with&nbsp;this&nbsp;thoughtfully&nbsp;curated&nbsp;selection&nbsp;of&nbsp;premium&nbsp;sustainable&nbsp;goods.&nbsp;Designed&nbsp;to&nbsp;impress,&nbsp;this&nbsp;kit&nbsp;combines&nbsp;functionality&nbsp;with&nbsp;a&nbsp;zero-waste&nbsp;philosophy.</p><ul><li><strong>Sustainable&nbsp;Materials:</strong>&nbsp;100%&nbsp;bamboo,&nbsp;wood,&nbsp;and&nbsp;natural&nbsp;grass</li><li><strong>Brandable:</strong>&nbsp;Can&nbsp;be&nbsp;customized&nbsp;with&nbsp;your&nbsp;company&nbsp;logo</li><li><strong>Contents:</strong>&nbsp;Bamboo&nbsp;flask,&nbsp;notebook,&nbsp;pen,&nbsp;and&nbsp;coffee&nbsp;mug</li></ul><p><em>Perfect&nbsp;for&nbsp;onboarding,&nbsp;holiday&nbsp;gifting,&nbsp;and&nbsp;corporate&nbsp;milestones.</em></p>",
@@ -141,7 +141,7 @@
   },
   {
     "id": 99904,
-    "name": "Personal Care Kit",
+    "name": "Eco Personal Care Collection",
     "handle": "personal-care-kit-new",
     "price": ".94",
     "description": "Complete personal care essentials made from sustainable materials.",
@@ -167,7 +167,7 @@
   },
   {
     "id": 99906,
-    "name": "Coffee Kit",
+    "name": "Coffee lovers' collection",
     "handle": "coffee-kit",
     "price": ".94",
     "description": "<p>The <strong>Coffee Kit</strong> is every sustainable coffee lover's dream.</p><p>Enjoy your favorite brew on the go without contributing to single-use plastic waste. This kit keeps your beverages at the perfect temperature while keeping your conscience clean.</p><ul><li><strong>Insulated Mug:</strong> Keeps drinks hot or cold for hours</li><li><strong>Bamboo Exterior:</strong> Sleek, natural, and comfortable to hold</li><li><strong>Spill-proof Lid:</strong> Perfect for commutes and travel</li></ul>",
