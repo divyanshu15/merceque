@@ -10,6 +10,13 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'No file uploaded' }, { status: 400 });
     }
 
+    if (!process.env.BLOB_READ_WRITE_TOKEN) {
+      return NextResponse.json(
+        { error: 'Vercel Blob storage is not configured. Please create a Blob store in your Vercel Dashboard.' }, 
+        { status: 500 }
+      );
+    }
+
     // Create a unique filename
     const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1e9)}`;
     const originalName = file.name.replace(/[^a-zA-Z0-9.-]/g, '');
