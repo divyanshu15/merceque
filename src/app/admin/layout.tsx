@@ -1,10 +1,21 @@
+"use client";
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { LogoutButton } from '@/components/admin/LogoutButton';
 
 export default function AdminLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const isLoginPage = pathname === '/admin/login';
+
+  if (isLoginPage) {
+    return <>{children}</>;
+  }
+
   return (
     <div className="min-h-screen pt-20 bg-neutral-50 dark:bg-neutral-900 flex flex-col md:flex-row">
       <aside className="w-full md:w-64 bg-white dark:bg-neutral-950 border-r border-neutral-200 dark:border-neutral-800 p-6 flex flex-col">
@@ -34,6 +45,9 @@ export default function AdminLayout({
           >
             &larr; Back to Main Site
           </Link>
+          <div className="flex flex-col border-t border-neutral-200 dark:border-neutral-800 mt-4 pt-4">
+            <LogoutButton />
+          </div>
         </div>
       </aside>
       <main className="flex-1 p-6 md:p-10 overflow-auto">
