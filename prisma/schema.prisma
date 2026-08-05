@@ -14,3 +14,16 @@ model B2BOrder {
   quantity  String
   createdAt DateTime @default(now())
 }
+
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  handle      String   @unique
+  price       String
+  description String
+  image       String
+  images      String[]
+  quantity    Int      @default(0)
+  category    String   @default("individual")
+  createdAt   DateTime @default(now())
+}

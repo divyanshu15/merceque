@@ -1,23 +1,16 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { PrismaClient } from '@prisma/client';
 
-const dataFilePath = path.join(process.cwd(), 'src', 'data', 'products.json');
-
-function getProducts() {
-  const fileContent = fs.readFileSync(dataFilePath, 'utf8');
-  return JSON.parse(fileContent);
-}
-
-function saveProducts(products: any[]) {
-  fs.writeFileSync(dataFilePath, JSON.stringify(products, null, 2), 'utf8');
-}
+const prisma = new PrismaClient();
 
 export async function GET() {
   try {
-    const products = getProducts();
+    const products = await prisma.product.findMany({
+      orderBy: { createdAt: 'desc' }
+    });
     return NextResponse.json(products);
   } catch (error) {
+    console.error('Error fetching products:', error);
     return NextResponse.json({ error: 'Failed to read products data' }, { status: 500 });
   }
 }
@@ -25,19 +18,24 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const products = getProducts();
     
-    // Create new product with a generated ID
-    const newProduct = {
-      ...body,
-      id: Date.now(), // simple unique id generator
-    };
-    
-    products.push(newProduct);
-    saveProducts(products);
+    // Create new product in Postgres
+    const newProduct = await prisma.product.create({
+      data: {
+        name: body.name,
+        handle: body.handle,
+        price: body.price,
+        description: body.description,
+        image: body.image || "",
+        images: body.images || [],
+        quantity: parseInt(body.quantity, 10) || 0,
+        category: body.category || "individual",
+      }
+    });
     
     return NextResponse.json(newProduct, { status: 201 });
   } catch (error) {
+    console.error('Error saving product:', error);
     return NextResponse.json({ error: 'Failed to save product data' }, { status: 500 });
   }
 }
