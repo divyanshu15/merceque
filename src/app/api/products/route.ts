@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { revalidatePath } from 'next/cache';
 import prisma from '@/lib/prisma';
 
 
@@ -33,6 +34,9 @@ export async function POST(request: Request) {
         discountPercentage: body.discountPercentage ? parseInt(body.discountPercentage, 10) : null,
       }
     });
+    
+    // Bust Next.js cache in production
+    revalidatePath('/', 'layout');
     
     return NextResponse.json(newProduct, { status: 201 });
   } catch (error) {

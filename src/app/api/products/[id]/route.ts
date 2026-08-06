@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { revalidatePath } from 'next/cache';
 import prisma from '@/lib/prisma';
 
 
@@ -23,6 +24,9 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
       }
     });
     
+    // Bust Next.js cache in production so the storefront updates immediately
+    revalidatePath('/', 'layout');
+    
     return NextResponse.json(updatedProduct);
   } catch (error) {
     console.error('Error updating product:', error);
@@ -37,6 +41,9 @@ export async function DELETE(request: Request, { params }: { params: Promise<{ i
     await prisma.product.delete({
       where: { id }
     });
+    
+    // Bust Next.js cache
+    revalidatePath('/', 'layout');
     
     return NextResponse.json({ success: true });
   } catch (error) {
