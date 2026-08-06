@@ -18,6 +18,8 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
         images: body.images,
         quantity: body.quantity !== undefined ? parseInt(body.quantity, 10) : undefined,
         category: body.category,
+        offerName: body.offerName !== undefined ? body.offerName : undefined,
+        discountPercentage: body.discountPercentage !== undefined ? (body.discountPercentage ? parseInt(body.discountPercentage, 10) : null) : undefined,
       }
     });
     

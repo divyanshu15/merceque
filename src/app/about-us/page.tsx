@@ -5,9 +5,9 @@ import { Leaf, Globe2, HeartHandshake, ShieldCheck } from "lucide-react";
 
 export default function AboutUsPage() {
   return (
-    <div className="min-h-screen bg-neutral-50 flex flex-col pt-32">
+    <div className="min-h-screen bg-[#d9d0c1] flex flex-col pt-32">
       {/* Hero Section */}
-      <section className="w-full px-6 py-12 lg:py-20 bg-[#dbe1d6]">
+      <section className="w-full px-6 py-12 lg:py-20 bg-transparent">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2b4433] mb-6 font-cursive">
             About Us
@@ -19,7 +19,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Our Story: Left Text, Right Image */}
-      <section className="w-full px-6 py-16 lg:py-24 bg-white" id="story">
+      <section className="w-full px-6 py-16 lg:py-24 bg-transparent" id="story">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className="w-full lg:w-1/2 space-y-6 text-neutral-600 text-lg leading-relaxed">
             <p>
@@ -81,7 +81,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* What We Offer */}
-      <section className="w-full px-6 py-16 lg:py-24 bg-neutral-50" id="offerings">
+      <section className="w-full px-6 py-16 lg:py-24 bg-transparent" id="offerings">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-[#2b4433] text-center mb-16">
             What We Offer

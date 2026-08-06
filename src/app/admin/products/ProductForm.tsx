@@ -29,6 +29,8 @@ export default function ProductForm({ initialData, isNew = false }: ProductFormP
       images: [],
       category: 'individual',
       quantity: 0,
+      offerName: '',
+      discountPercentage: null,
     }
   );
 
@@ -38,7 +40,7 @@ export default function ProductForm({ initialData, isNew = false }: ProductFormP
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: name === 'quantity' ? parseInt(value) || 0 : value,
+      [name]: (name === 'quantity' || name === 'discountPercentage') ? (value ? parseInt(value) : null) : value,
     }));
   };
 
@@ -307,6 +309,57 @@ export default function ProductForm({ initialData, isNew = false }: ProductFormP
                 className="w-full p-3 bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition-all text-sm"
               />
             </div>
+          </div>
+
+          {/* Product Offer Section */}
+          <div className="bg-white dark:bg-neutral-950 p-6 rounded-xl border border-neutral-200 dark:border-neutral-800 shadow-sm space-y-6">
+            <div className="flex items-center justify-between">
+              <label className="text-sm font-medium">Special Offer</label>
+              <button
+                type="button"
+                onClick={() => {
+                  if (formData.offerName || formData.discountPercentage) {
+                    setFormData(prev => ({ ...prev, offerName: '', discountPercentage: null }));
+                  } else {
+                    setFormData(prev => ({ ...prev, offerName: 'Special Deal', discountPercentage: 10 }));
+                  }
+                }}
+                className="text-xs font-medium px-3 py-1.5 rounded-full bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
+              >
+                {(formData.offerName || formData.discountPercentage) ? 'Remove Offer' : 'Add Offer'}
+              </button>
+            </div>
+            
+            {(formData.offerName || formData.discountPercentage) && (
+              <div className="space-y-4 pt-2 border-t border-neutral-100 dark:border-neutral-800">
+                <div className="space-y-2">
+                  <label htmlFor="offerName" className="text-sm font-medium">Offer Name (Badge text)</label>
+                  <input
+                    type="text"
+                    id="offerName"
+                    name="offerName"
+                    value={formData.offerName || ''}
+                    onChange={handleChange}
+                    className="w-full p-3 bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition-all text-sm"
+                    placeholder="e.g., Summer Sale"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="discountPercentage" className="text-sm font-medium">Discount Percentage (%)</label>
+                  <input
+                    type="number"
+                    id="discountPercentage"
+                    name="discountPercentage"
+                    min="1"
+                    max="100"
+                    value={formData.discountPercentage || ''}
+                    onChange={handleChange}
+                    className="w-full p-3 bg-neutral-50 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg outline-none focus:ring-2 focus:ring-black dark:focus:ring-white transition-all text-sm"
+                    placeholder="e.g., 20"
+                  />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

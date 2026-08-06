@@ -40,8 +40,20 @@ export default async function ProductPage({ params }: { params: Promise<{ handle
   // Deduplicate images just in case
   const uniqueImages = Array.from(new Set(allImages));
 
+  const discountedPrice = product.price && product.discountPercentage 
+    ? (() => {
+        const numericPart = product.price.replace(/[^0-9.]/g, '');
+        if (!numericPart) return null;
+        const price = parseFloat(numericPart);
+        const discounted = price - (price * (product.discountPercentage / 100));
+        let formatted = discounted.toFixed(2);
+        if (formatted.endsWith('.00')) formatted = formatted.replace('.00', '');
+        return product.price.replace(numericPart, formatted);
+      })()
+    : null;
+
   return (
-    <div className="min-h-screen bg-neutral-50 flex flex-col">
+    <div className="min-h-screen bg-[#d9d0c1] flex flex-col">
       <main className="flex-1 w-full max-w-7xl mx-auto px-6 pt-32 md:pt-40 pb-12 md:pb-24">
         {/* Breadcrumb / Back button */}
         <Link 
@@ -69,8 +81,31 @@ export default async function ProductPage({ params }: { params: Promise<{ handle
             </h1>
 
             {product.category !== 'combo' ? (
-              <div className="text-3xl font-bold text-neutral-900 mb-8">
-                {product.price}
+              <div className="mb-8">
+                {product.offerName && product.discountPercentage ? (
+                  <>
+                    <div className="inline-flex items-center gap-2 mb-3">
+                      <span className="px-2.5 py-1 bg-red-100 text-red-700 text-xs font-bold uppercase rounded-md tracking-wider">
+                        {product.offerName}
+                      </span>
+                      <span className="px-2.5 py-1 bg-black text-white text-xs font-bold rounded-md">
+                        -{product.discountPercentage}%
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="text-3xl md:text-4xl font-bold text-neutral-900">
+                        {discountedPrice}
+                      </div>
+                      <div className="text-xl md:text-2xl font-medium text-neutral-400 line-through">
+                        {product.price}
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <div className="text-3xl md:text-4xl font-bold text-neutral-900">
+                    {product.price}
+                  </div>
+                )}
               </div>
             ) : (
               <div className="text-xl font-medium text-neutral-600 mb-8">

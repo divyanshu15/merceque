@@ -34,7 +34,7 @@ export function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 px-6 bg-black/5 dark:bg-[#0a0a0a] border-t border-black/10 dark:border-white/10 relative z-10">
+    <section id="faq" className="py-24 px-6 bg-transparent border-t border-black/10 dark:border-white/10 relative z-10">
       <div className="max-w-3xl mx-auto">
         <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-4 text-foreground">

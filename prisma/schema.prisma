@@ -25,5 +25,7 @@ model Product {
   images      String[]
   quantity    Int      @default(0)
   category    String   @default("individual")
+  offerName   String?
+  discountPercentage Int?
   createdAt   DateTime @default(now())
 }

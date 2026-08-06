@@ -25,8 +25,8 @@ export default async function AdminB2BOrdersPage() {
                   <th className="px-6 py-4">Date</th>
                   <th className="px-6 py-4">Name</th>
                   <th className="px-6 py-4">Email</th>
-                  <th className="px-6 py-4">Product</th>
-                  <th className="px-6 py-4">Quantity</th>
+                  <th className="px-6 py-4">Enquiry</th>
+                  <th className="px-6 py-4">Organisation Name</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-neutral-200 dark:divide-neutral-800">

@@ -10,6 +10,8 @@ export interface Product {
   images: string[];
   quantity: number;
   category?: string;
+  offerName?: string | null;
+  discountPercentage?: number | null;
 }
 
 export const products: Product[] = productsData as Product[];

@@ -37,7 +37,7 @@ export function Products({ products, limit, title, category, hidePaddingTop }: P
   const router = useRouter();
 
   return (
-    <section id="products" className={`px-6 bg-background relative overflow-hidden ${hidePaddingTop ? 'pb-32' : 'py-32'}`}>
+    <section id="products" className={`px-6 bg-transparent relative overflow-hidden ${hidePaddingTop ? 'pb-32' : 'py-32'}`}>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
           <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tight text-foreground">

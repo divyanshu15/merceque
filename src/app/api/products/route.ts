@@ -29,6 +29,8 @@ export async function POST(request: Request) {
         images: body.images || [],
         quantity: parseInt(body.quantity, 10) || 0,
         category: body.category || "individual",
+        offerName: body.offerName || null,
+        discountPercentage: body.discountPercentage ? parseInt(body.discountPercentage, 10) : null,
       }
     });
     
