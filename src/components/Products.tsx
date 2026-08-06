@@ -16,6 +16,8 @@ export interface Product {
   images: string[];
   quantity: number;
   category: string;
+  offerName?: string | null;
+  discountPercentage?: number | null;
 }
 
 interface ProductsProps {
@@ -86,10 +88,41 @@ export function Products({ products, limit, title, category, hidePaddingTop }: P
                     <span className="text-sm font-medium text-gray-600">Pricing upon request</span>
                   </div>
                 ) : (
-                  <div className="flex items-baseline gap-1 mb-1 mt-auto text-black">
-                    <span className="text-xs align-top pt-1">$</span>
-                    <span className="text-2xl font-semibold">{product.price.replace('$', '').split('.')[0] || '0'}</span>
-                    <span className="text-xs align-top pt-1">{product.price.split('.')[1] || '00'}</span>
+                  <div className="flex items-baseline gap-1 mb-1 mt-auto text-black flex-wrap">
+                    {product.offerName && product.discountPercentage ? (
+                      <>
+                        <div className="w-full flex gap-2 mb-1">
+                          <span className="px-2 py-0.5 bg-red-100 text-red-700 text-[10px] font-bold uppercase rounded tracking-wider">
+                            {product.offerName}
+                          </span>
+                          <span className="px-2 py-0.5 bg-black text-white text-[10px] font-bold rounded">
+                            -{product.discountPercentage}%
+                          </span>
+                        </div>
+                        {(() => {
+                           const numericPart = product.price.replace(/[^0-9.]/g, '');
+                           if (!numericPart) return null;
+                           const priceNum = parseFloat(numericPart);
+                           const discounted = priceNum - (priceNum * (product.discountPercentage / 100));
+                           const formatted = discounted.toFixed(2);
+                           const parts = formatted.split('.');
+                           return (
+                             <>
+                               <span className="text-xs align-top pt-1">$</span>
+                               <span className="text-2xl font-semibold">{parts[0]}</span>
+                               <span className="text-xs align-top pt-1">{parts[1] || '00'}</span>
+                               <span className="text-xs text-gray-400 line-through ml-2 self-center">{product.price}</span>
+                             </>
+                           );
+                        })()}
+                      </>
+                    ) : (
+                      <>
+                        <span className="text-xs align-top pt-1">$</span>
+                        <span className="text-2xl font-semibold">{product.price.replace('$', '').split('.')[0] || '0'}</span>
+                        <span className="text-xs align-top pt-1">{product.price.split('.')[1] || '00'}</span>
+                      </>
+                    )}
                   </div>
                 )}
                 
