@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ForBusinessesPage() {
   return (
-    <main className="flex min-h-screen flex-col w-full pb-24 bg-[#d9d0c1]">
+    <main className="flex min-h-screen flex-col w-full pb-24 bg-[#dbe1d6]">
       {/* Hero Section */}
       <section className="relative pt-32 pb-24 px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12 relative z-10">
@@ -44,7 +44,7 @@ export default function ForBusinessesPage() {
       <section className="relative px-6 py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image src="/images/new/bamboo_bath_kit.jpg" alt="Bamboo Eco-Gift Box" fill priority sizes="100vw" className="object-cover object-center" />
-          <div className="absolute inset-0 bg-[#d9d0c1]/80" />
+          <div className="absolute inset-0 bg-[#dbe1d6]/80" />
         </div>
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight text-[#2b4433] mb-16 text-center">
@@ -119,7 +119,7 @@ export default function ForBusinessesPage() {
       </section>
 
       {/* Order Details */}
-      <section className="px-6 py-24 bg-[#d2c9b9]">
+      <section className="px-6 py-24 bg-[#dbe1d6]">
         <div className="max-w-4xl mx-auto w-full">
           <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight text-[#2b4433] mb-12 text-center">
             Order Details

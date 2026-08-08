@@ -5,7 +5,7 @@ import { Leaf, Globe2, HeartHandshake, ShieldCheck } from "lucide-react";
 
 export default function AboutUsPage() {
   return (
-    <div className="min-h-screen bg-[#d9d0c1] flex flex-col pt-32">
+    <div className="min-h-screen bg-[#dbe1d6] flex flex-col pt-32">
       {/* Hero Section */}
       <section className="w-full px-6 py-12 lg:py-20 bg-transparent">
         <div className="max-w-4xl mx-auto text-center">

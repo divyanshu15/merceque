@@ -16,7 +16,7 @@ export function Footer() {
             </span>
           </Link>
           <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-            Merging brutalist aesthetics with organic sustainability. We curate
+            Where modern design meets sustainable craftsmanship. We curate
             premium bamboo essentials designed to elevate your daily rituals
             while minimizing environmental impact.
           </p>

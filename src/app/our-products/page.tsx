@@ -20,7 +20,7 @@ export default async function OurProductsPage() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col w-full pt-20 bg-[#d9d0c1]">
+    <main className="flex min-h-screen flex-col w-full pt-20 bg-[#dbe1d6]">
       <Products products={products} title={<>Eco<br/>Collections</>} category="combo" />
       <Products products={products} title={<>Individual<br/>Products</>} category="individual" hidePaddingTop />
     </main>

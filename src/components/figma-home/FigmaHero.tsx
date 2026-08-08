@@ -8,7 +8,7 @@ export function FigmaHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/new/hero1.png"
+          src="/images/new/hero-new.png"
           alt="Bamboo Bath Kit"
           fill
           className="object-cover object-center"

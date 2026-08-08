@@ -21,7 +21,7 @@ export function Contact() {
               <input
                 type="text"
                 id="name"
-                className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 text-foreground focus:outline-none focus:border-primary hover:border-black/20 dark:hover:border-white/30 focus:shadow-[0_0_15px_rgba(0,255,127,0.15)] transition-all duration-300 rounded-xl backdrop-blur-sm"
+                className="bg-white dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 text-foreground focus:outline-none focus:border-primary hover:border-black/20 dark:hover:border-white/30 focus:shadow-[0_0_15px_rgba(0,255,127,0.15)] transition-all duration-300 rounded-xl backdrop-blur-sm"
                 placeholder=""
               />
             </div>
@@ -30,7 +30,7 @@ export function Contact() {
               <input
                 type="email"
                 id="email"
-                className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 text-foreground focus:outline-none focus:border-primary hover:border-black/20 dark:hover:border-white/30 focus:shadow-[0_0_15px_rgba(0,255,127,0.15)] transition-all duration-300 rounded-xl backdrop-blur-sm"
+                className="bg-white dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 text-foreground focus:outline-none focus:border-primary hover:border-black/20 dark:hover:border-white/30 focus:shadow-[0_0_15px_rgba(0,255,127,0.15)] transition-all duration-300 rounded-xl backdrop-blur-sm"
                 placeholder=""
               />
             </div>
@@ -41,7 +41,7 @@ export function Contact() {
             <textarea
               id="message"
               rows={5}
-              className="bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 text-foreground focus:outline-none focus:border-primary hover:border-black/20 dark:hover:border-white/30 focus:shadow-[0_0_15px_rgba(0,255,127,0.15)] transition-all duration-300 rounded-xl backdrop-blur-sm resize-y"
+              className="bg-white dark:bg-white/5 border border-black/10 dark:border-white/10 p-4 text-foreground focus:outline-none focus:border-primary hover:border-black/20 dark:hover:border-white/30 focus:shadow-[0_0_15px_rgba(0,255,127,0.15)] transition-all duration-300 rounded-xl backdrop-blur-sm resize-y"
               placeholder="YOUR MESSAGE..."
             />
           </div>
