@@ -69,6 +69,18 @@ export function CatalogForm() {
         </div>
 
         <div className="flex flex-col gap-1.5">
+          <label htmlFor="quantity" className="font-medium text-foreground text-sm">Organization/Business Name</label>
+          <input
+            type="text"
+            id="quantity"
+            required
+            className="px-3 py-2 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-transparent focus:outline-none focus:ring-2 focus:ring-primary text-sm"
+            value={formData.quantity}
+            onChange={(e) => setFormData({ ...formData, quantity: e.target.value })}
+          />
+        </div>
+
+        <div className="flex flex-col gap-1.5">
           <label htmlFor="email" className="font-medium text-foreground text-sm">Email Address</label>
           <input
             type="email"
@@ -86,25 +98,13 @@ export function CatalogForm() {
             id="product"
             required
             rows={3}
-            placeholder="Please detail your request..."
             className="px-3 py-2 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-transparent focus:outline-none focus:ring-2 focus:ring-primary resize-none text-sm"
             value={formData.product}
             onChange={(e) => setFormData({ ...formData, product: e.target.value })}
           />
         </div>
 
-        <div className="flex flex-col gap-1.5">
-          <label htmlFor="quantity" className="font-medium text-foreground text-sm">Organisation Name</label>
-          <input
-            type="text"
-            id="quantity"
-            required
-            placeholder="e.g., Acme Corp"
-            className="px-3 py-2 rounded-lg border border-neutral-300 dark:border-neutral-700 bg-transparent focus:outline-none focus:ring-2 focus:ring-primary text-sm"
-            value={formData.quantity}
-            onChange={(e) => setFormData({ ...formData, quantity: e.target.value })}
-          />
-        </div>
+
 
         <Button 
           type="submit" 
