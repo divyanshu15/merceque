@@ -9,7 +9,7 @@ export function FigmaHero() {
       <div className="absolute inset-0 z-0">
         {/* Desktop Image */}
         <Image
-          src="/images/new/hero-new.png"
+          src="/images/new/hero-desktop.png"
           alt="Bamboo Bath Kit"
           fill
           className="object-cover object-center hidden lg:block"
