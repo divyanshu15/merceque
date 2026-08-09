@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 export function SignatureServices() {
   const services = [
     { src: "/images/new/bamboo_pen_close.jpeg", alt: "Bamboo Pens" },
-    { src: "/images/new/bamboo_bath_kit.jpg", alt: "Nature Essentials" },
+    { src: "/images/new/eco_collection_pro.png", alt: "Nature Essentials" },
     { src: "/images/new/wooden_cups.jpeg", alt: "Wooden Cups Set" },
   ];
 
@@ -16,7 +16,10 @@ export function SignatureServices() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
           {services.map((service, i) => (
-            <div key={i} className="relative aspect-[3/4] w-full bg-black/5 overflow-hidden rounded-md group">
+            <div
+              key={i}
+              className="relative aspect-[3/4] w-full bg-black/5 overflow-hidden rounded-md group"
+            >
               <Image
                 src={service.src}
                 alt={service.alt}

@@ -1,11 +1,11 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export function ViewAllProducts() {
   const products = [
     { src: "/images/new/wooden_cups.jpeg" },
-    { src: "/images/new/bamboo_bath_kit.jpg" },
+    { src: "/images/new/eco_collection_pro.png" },
     { src: "/images/new/bamboo_thermos_cups.jpeg" },
     { src: "/images/new/bamboo_bottles_rocks.jpeg" },
   ];
@@ -18,7 +18,13 @@ export function ViewAllProducts() {
         </h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((p, i) => (
-            <Link href="/our-products" target="_blank" rel="noopener noreferrer" key={i} className="group">
+            <Link
+              href="/our-products"
+              target="_blank"
+              rel="noopener noreferrer"
+              key={i}
+              className="group"
+            >
               <div className="relative aspect-square w-full overflow-hidden rounded-md bg-black/5">
                 <Image
                   src={p.src}

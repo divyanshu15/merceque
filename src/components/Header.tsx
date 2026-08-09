@@ -17,35 +17,35 @@ export function Header() {
         </p>
       </div>
       <div className="w-full bg-transparent">
-        <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 h-16 lg:h-24 flex items-center justify-between">
           <Link href="/" target="_blank" rel="noopener noreferrer" className="flex items-center group">
           <span className="text-3xl md:text-4xl font-cursive font-bold text-[#1f3125] drop-shadow-sm">
             Merceque
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8 text-sm font-medium text-black/80">
-          <Link href="/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">
+        <nav className="hidden lg:flex items-center gap-8 text-base font-medium text-black/80">
+          <Link href="/" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4 transition-all">
             Home
           </Link>
           <Link
             href="/for-businesses"
             target="_blank" rel="noopener noreferrer"
-            className="hover:text-black transition-colors"
+            className="hover:underline underline-offset-4 transition-all"
           >
             For Businesses
           </Link>
           <Link
             href="/our-products"
             target="_blank" rel="noopener noreferrer"
-            className="hover:text-black transition-colors"
+            className="hover:underline underline-offset-4 transition-all"
           >
             Our Products
           </Link>
           <Link
             href="/contact"
             target="_blank" rel="noopener noreferrer"
-            className="hover:text-black transition-colors"
+            className="hover:underline underline-offset-4 transition-all"
           >
             Contact
           </Link>
@@ -53,7 +53,7 @@ export function Header() {
           <Link
             href="/about-us"
             target="_blank" rel="noopener noreferrer"
-            className="hover:text-black transition-colors"
+            className="hover:underline underline-offset-4 transition-all"
           >
             About Us
           </Link>
@@ -83,35 +83,35 @@ export function Header() {
         <Link 
           href="/" 
           onClick={() => setIsMobileMenuOpen(false)}
-          className="text-2xl font-medium text-black/80 hover:text-black transition-colors"
+          className="text-2xl font-medium text-black/80 hover:underline underline-offset-4 transition-all"
         >
           Home
         </Link>
         <Link
           href="/for-businesses"
           onClick={() => setIsMobileMenuOpen(false)}
-          className="text-2xl font-medium text-black/80 hover:text-black transition-colors"
+          className="text-2xl font-medium text-black/80 hover:underline underline-offset-4 transition-all"
         >
           For Businesses
         </Link>
         <Link
           href="/our-products"
           onClick={() => setIsMobileMenuOpen(false)}
-          className="text-2xl font-medium text-black/80 hover:text-black transition-colors"
+          className="text-2xl font-medium text-black/80 hover:underline underline-offset-4 transition-all"
         >
           Our Products
         </Link>
         <Link
           href="/contact"
           onClick={() => setIsMobileMenuOpen(false)}
-          className="text-2xl font-medium text-black/80 hover:text-black transition-colors"
+          className="text-2xl font-medium text-black/80 hover:underline underline-offset-4 transition-all"
         >
           Contact
         </Link>
         <Link
           href="/about-us"
           onClick={() => setIsMobileMenuOpen(false)}
-          className="text-2xl font-medium text-black/80 hover:text-black transition-colors"
+          className="text-2xl font-medium text-black/80 hover:underline underline-offset-4 transition-all"
         >
           About Us
         </Link>

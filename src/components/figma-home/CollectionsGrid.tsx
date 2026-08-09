@@ -4,10 +4,19 @@ import Link from "next/link";
 
 export function CollectionsGrid() {
   const collections = [
-    { title: "Executive Collection", src: "/images/new/DSC08034.jpeg" },
-    { title: "Eco Personal Care Collection", src: "/images/new/bamboo_bath_kit.jpg" },
+    {
+      title: "Executive Collection",
+      src: "/images/new/executive_collection_pro.png",
+    },
+    {
+      title: "Eco Personal Care Collection",
+      src: "/images/new/eco_collection_pro.png",
+    },
     { title: "Student Essentials", src: "/images/new/toothbrush.png" },
-    { title: "Sustainable Travel Essentials", src: "/images/new/bamboo_thermos_box.jpeg" },
+    {
+      title: "Sustainable Travel Essentials",
+      src: "/images/new/bamboo_thermos_box.png",
+    },
   ];
 
   return (

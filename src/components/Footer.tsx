@@ -30,25 +30,25 @@ export function Footer() {
             </h4>
             <Link
               href="/"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm"
+              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
             >
               Home
             </Link>
             <Link
               href="/our-products"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm"
+              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
             >
               Products
             </Link>
             <Link
               href="/about-us"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm"
+              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
             >
               Our Story
             </Link>
             <Link
               href="/for-businesses"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm"
+              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
             >
               For Business
             </Link>
@@ -60,7 +60,7 @@ export function Footer() {
             </h4>
             <Link
               href="/contact"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm"
+              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
             >
               Contact Us
             </Link>
@@ -68,26 +68,26 @@ export function Footer() {
               href="https://cal.com/divyanshu-singh-xzmqzh"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm flex items-center gap-1 group"
+              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm flex items-center gap-1 group"
             >
               Book Meeting
               <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
             <Link
               href="/contact#faq"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm"
+              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
             >
               FAQ
             </Link>
             <Link
               href="/shipping-and-returns"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm"
+              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
             >
               Shipping & Returns
             </Link>
             <Link
               href="/privacy-policy"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm"
+              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
             >
               Privacy Policy
             </Link>
@@ -99,21 +99,21 @@ export function Footer() {
             </h4>
             <Link
               href="#"
-              className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm group"
+              className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm group"
             >
               Instagram{" "}
               <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm group"
+              className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm group"
             >
               Twitter{" "}
               <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-primary transition-colors text-sm group"
+              className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm group"
             >
               LinkedIn{" "}
               <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
