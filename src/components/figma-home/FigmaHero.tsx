@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function FigmaHero() {
   return (
-    <section className="relative w-full min-h-[100vh] flex flex-col justify-center overflow-hidden pt-32 pb-16">
+    <section className="relative w-full min-h-[100vh] flex flex-col justify-between overflow-hidden pt-32 pb-16">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         {/* Desktop Image */}
@@ -37,17 +37,20 @@ export function FigmaHero() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#5b7556]/50" />
       </div>
 
-      {/* Main Content */}
-      <div className="z-10 w-full px-6 flex flex-col items-center gap-6 mt-8">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg max-w-4xl mx-auto leading-tight text-center">
+      {/* Top Content */}
+      <div className="z-10 w-full px-8 md:px-16 flex justify-end mt-8">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white drop-shadow-lg max-w-none text-right leading-tight">
           Discover Our Amazing Products
         </h1>
+      </div>
 
+      {/* Bottom Content */}
+      <div className="z-10 w-full px-6 flex flex-col items-center mt-auto">
         <h2 className="text-2xl md:text-3xl lg:text-4xl text-white/95 font-cursive drop-shadow-md w-full px-4 mx-auto text-center font-normal tracking-wide">
           Elevate your lifestyle with Bamboo and Natural Essentials
         </h2>
 
-        <div className="flex gap-8 flex-wrap justify-center mt-4">
+        <div className="flex gap-8 flex-wrap justify-center mt-8">
           <Link
             href="/our-products"
             target="_blank"
