@@ -8,7 +8,7 @@ import { SocialFollow } from "@/components/figma-home/SocialFollow";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col w-full bg-[#efecec]">
+    <main className="flex min-h-screen flex-col w-full bg-[#dbe1d6]">
       <FigmaHero />
       <CollectionsGrid />
       <QuoteSection />

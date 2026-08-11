@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function FigmaHero() {
   return (
-    <section className="relative w-full min-h-[100vh] flex flex-col justify-between overflow-hidden pt-32 pb-16">
+    <section className="relative w-full min-h-[100vh] flex flex-col justify-between overflow-hidden pt-32 pb-0">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         {/* Desktop Image */}
@@ -31,10 +31,10 @@ export function FigmaHero() {
           className="object-cover object-center block md:hidden"
           priority
         />
-        {/* Subtle dark overlay for text readability at the top */}
+        {/* Light dark overlay */}
         <div className="absolute inset-0 bg-black/10" />
-        {/* Requested gradient: 0% top to 50% bottom */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#5b7556]/50" />
+        {/* Figma: gradient fades from transparent at top to solid dark green at bottom ~50% */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#2d3d2e]/80" />
       </div>
 
       {/* Top Content */}
@@ -44,18 +44,19 @@ export function FigmaHero() {
         </h1>
       </div>
 
-      {/* Bottom Content */}
-      <div className="z-10 w-full px-6 flex flex-col items-center mt-auto">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl text-white/95 font-cursive drop-shadow-md w-full px-4 mx-auto text-center font-normal tracking-wide">
-          Elevate your lifestyle with Bamboo and Natural Essentials
+      {/* Bottom Content — dark olive strip matching Figma */}
+      <div className="z-10 w-full bg-[#3a4f3c]/40 backdrop-blur-sm flex flex-col items-center py-10 px-6">
+        <h2 className="text-xl md:text-2xl lg:text-3xl text-white/95 font-cursive drop-shadow-md w-full px-4 mx-auto text-center font-normal tracking-wide mb-8 italic">
+          Elevate Your Lifestyle with Sustainable Bamboo &amp; Natural
+          Essentials
         </h2>
 
-        <div className="flex gap-8 flex-wrap justify-center mt-8">
+        <div className="flex gap-6 flex-wrap justify-center">
           <Link
             href="/our-products"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#486350]/80 backdrop-blur-sm text-white px-10 py-3 rounded-md font-cursive text-2xl md:text-3xl hover:bg-[#385642]/90 transition-colors shadow-md border border-[#5d7a66]/50"
+            className="bg-[#2d3d2e] text-white px-12 py-3 font-cursive text-2xl md:text-3xl hover:bg-[#1e2e20] transition-colors shadow-md"
           >
             Shop now
           </Link>
@@ -63,7 +64,7 @@ export function FigmaHero() {
             href="/about-us"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#486350]/80 backdrop-blur-sm text-white px-10 py-3 rounded-md font-cursive text-2xl md:text-3xl hover:bg-[#385642]/90 transition-colors shadow-md border border-[#5d7a66]/50"
+            className="bg-[#2d3d2e] text-white px-12 py-3 font-cursive text-2xl md:text-3xl hover:bg-[#1e2e20] transition-colors shadow-md"
           >
             Learn more
           </Link>
