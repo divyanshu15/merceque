@@ -61,7 +61,9 @@ export function CollectionsGrid() {
               key={i}
               className="group flex flex-col gap-3"
             >
-              <h2 className="text-white font-semibold text-xl">{item.title}</h2>
+              <h2 className="text-white font-semibold text-2xl">
+                {item.title}
+              </h2>
               <div className="relative aspect-square w-full overflow-hidden rounded-md bg-white/10">
                 <Image
                   src={item.src}
