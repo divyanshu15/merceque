@@ -11,7 +11,7 @@ export function ViewAllProducts() {
   ];
 
   return (
-    <section className="w-full pt-16 pb-12 px-6 bg-[#dbe1d6]">
+    <section className="w-full pt-16 pb-12 px-6 bg-transparent">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1f2f21] font-normal mb-10 tracking-wide">
           View All Products

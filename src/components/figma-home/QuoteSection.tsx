@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export function QuoteSection() {
   return (
-    <section className="w-full bg-gradient-to-r from-[#4d6955] to-[#7b9c84]">
-      <div className="max-w-7xl mx-auto py-12 flex flex-col md:flex-row items-center gap-10 min-h-[400px]">
+    <section className="w-full bg-transparent py-12">
+      <div className="max-w-7xl bg-[#2B483B7D] mx-auto px-12 py-12 flex flex-col md:flex-row items-center gap-10 min-h-[400px]">
         {/* Image: centered with rounded corners */}
         <div className="relative flex-shrink-0 w-100 md:w-100 h-64 md:h-80 rounded-[10px] overflow-hidden">
           <Image
