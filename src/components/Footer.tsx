@@ -1,136 +1,72 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
-import { ThemeToggle } from "./ThemeToggle";
 
 export function Footer() {
   return (
-    <footer className="bg-black/5 dark:bg-[#0a0a0a] border-t border-black/10 dark:border-white/10 pt-20 pb-10 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 md:gap-24">
-        {/* Brand Column */}
-        <div className="flex flex-col gap-6 md:w-1/3">
-          <Link href="/" className="flex items-center gap-3 group w-fit">
-            <span className="text-xl font-bold tracking-widest uppercase text-foreground">
-              MERCEQUE
-            </span>
+    <footer className="w-full bg-[#2B483B] px-6 py-12">
+      <div className="max-w-7xl mx-auto flex flex-col gap-3">
+        {/* Nav links row */}
+        <div className="flex flex-wrap items-center justify-between gap-y-2">
+          <Link
+            href="/about-us"
+            className="text-white/80 text-md hover:text-white transition-colors"
+          >
+            About us
           </Link>
-          <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-            Where modern design meets sustainable craftsmanship. We curate
-            premium bamboo essentials designed to elevate your daily rituals
-            while minimizing environmental impact.
-          </p>
+          <Link
+            href="/for-businesses"
+            className="text-white/80 text-md hover:text-white transition-colors"
+          >
+            For Businesses &amp; Institutions
+          </Link>
+          <Link
+            href="/our-products"
+            className="text-white/80 text-md hover:text-white transition-colors"
+          >
+            Products
+          </Link>
+          <Link
+            href="/about-us#vision"
+            className="text-white/80 text-md hover:text-white transition-colors"
+          >
+            Vision
+          </Link>
+          <Link
+            href="/privacy-policy"
+            className="text-white/80 text-md hover:text-white transition-colors"
+          >
+            Our policies
+          </Link>
+          <Link
+            href="/contact#faq"
+            className="text-white/80 text-md hover:text-white transition-colors"
+          >
+            FAQ
+          </Link>
+          <Link
+            href="/contact"
+            className="text-white/80 text-md hover:text-white transition-colors"
+          >
+            Help &amp; Support
+          </Link>
+          <Link
+            href="#"
+            className="text-white/80 text-md hover:text-white transition-colors"
+          >
+            Blogs
+          </Link>
         </div>
 
-        {/* Links Columns */}
-        <div className="flex flex-wrap md:flex-nowrap gap-12 md:gap-24 w-full md:w-2/3 justify-start md:justify-end">
-          <div className="flex flex-col gap-4">
-            <h4 className="font-bold uppercase tracking-widest text-foreground text-sm mb-2">
-              Explore
-            </h4>
-            <Link
-              href="/"
-              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
-            >
-              Home
-            </Link>
-            <Link
-              href="/our-products"
-              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
-            >
-              Products
-            </Link>
-            <Link
-              href="/about-us"
-              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
-            >
-              Our Story
-            </Link>
-            <Link
-              href="/for-businesses"
-              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
-            >
-              For Business
-            </Link>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <h4 className="font-bold uppercase tracking-widest text-foreground text-sm mb-2">
-              Support
-            </h4>
-            <Link
-              href="/contact"
-              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
-            >
-              Contact Us
-            </Link>
-            <a
-              href="https://cal.com/divyanshu-singh-xzmqzh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm flex items-center gap-1 group"
-            >
-              Book Meeting
-              <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </a>
-            <Link
-              href="/contact#faq"
-              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
-            >
-              FAQ
-            </Link>
-            <Link
-              href="/shipping-and-returns"
-              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
-            >
-              Shipping & Returns
-            </Link>
-            <Link
-              href="/privacy-policy"
-              className="text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm"
-            >
-              Privacy Policy
-            </Link>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <h4 className="font-bold uppercase tracking-widest text-foreground text-sm mb-2">
-              Socials
-            </h4>
-            <Link
-              href="#"
-              className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm group"
-            >
-              Instagram{" "}
-              <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </Link>
-            <Link
-              href="#"
-              className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm group"
-            >
-              Twitter{" "}
-              <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </Link>
-            <Link
-              href="#"
-              className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:underline underline-offset-4 transition-all text-sm group"
-            >
-              LinkedIn{" "}
-              <ArrowUpRight className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-black/10 dark:border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-gray-500">
-          © {new Date().getFullYear()} Merceque. All rights reserved.
-        </p>
-        <div className="flex items-center gap-6">
-          <ThemeToggle />
-          <p className="text-sm text-gray-500 font-mono hidden md:block">
-            ECO-CONSCIOUS // DESIGN
-          </p>
+        {/* Bottom row */}
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-white/50 text-xs">
+          <span>© {new Date().getFullYear()}, Merceque</span>
+          <span>Powered by Merceque</span>
+          <Link
+            href="/privacy-policy"
+            className="hover:text-white/80 transition-colors"
+          >
+            Privacy policy
+          </Link>
         </div>
       </div>
     </footer>
