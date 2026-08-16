@@ -21,7 +21,6 @@ export function CollectionsGrid() {
 
   return (
     <section className="w-full">
-      {/* <div className="max-w-7xl mx-auto flex flex-col gap-10"> */}
       {/* Elevate banner — above the grid, transparent bg */}
       <div className="w-full bg-transparent py-20">
         <div className="flex flex-col items-center gap-6">
@@ -53,7 +52,7 @@ export function CollectionsGrid() {
         </div>
       </div>
 
-      {/* Collection grid */}
+      {/* Collection grid — full-width green strip, content max-w-7xl */}
       <div className="w-full bg-[#385642] px-6 py-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -85,7 +84,6 @@ export function CollectionsGrid() {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </section>
   );
 }
