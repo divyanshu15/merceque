@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Italianno } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -11,6 +11,12 @@ const cursiveFont = Playfair_Display({
   weight: "400",
   style: "italic",
   variable: "--font-playfair",
+  subsets: ["latin"],
+});
+
+const italianno = Italianno({
+  weight: "400",
+  variable: "--font-italianno",
   subsets: ["latin"],
 });
 
@@ -39,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${cursiveFont.variable} font-sans`} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${cursiveFont.variable} ${italianno.variable} font-sans`} suppressHydrationWarning>
       <body className="min-h-screen bg-background text-foreground antialiased selection:bg-primary-dark selection:text-foreground transition-colors duration-300">
         <ThemeProvider
           attribute="class"

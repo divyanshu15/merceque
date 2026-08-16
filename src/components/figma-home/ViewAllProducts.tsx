@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export function ViewAllProducts() {
   const products = [
-    { src: "/images/new/wooden_cups.jpeg" },
-    { src: "/images/new/eco_collection_pro.png" },
-    { src: "/images/new/bamboo_thermos_cups.jpeg" },
-    { src: "/images/new/bamboo_bottles_rocks.jpeg" },
+    { src: "/figma-images/product1.jpg" },
+    { src: "/figma-images/product2.jpg" },
+    { src: "/figma-images/product3.jpg" },
+    { src: "/figma-images/product4.jpg" },
   ];
 
   return (

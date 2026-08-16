@@ -34,7 +34,7 @@ export function FigmaHero() {
         {/* Light dark overlay */}
         <div className="absolute inset-0 bg-black/10" />
         {/* Figma: gradient fades from transparent at top to solid dark green at bottom ~50% */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#2d3d2e]/80" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#2d3d2e]/80" /> */}
       </div>
 
       {/* Top Content */}

@@ -18,9 +18,7 @@ export function Header() {
   return (
     <header className="absolute top-0 left-0 w-full z-40 flex flex-col">
       <div className="w-full bg-transparent py-2 text-center px-6 relative z-50">
-        <p
-          className={`text-xs font-medium tracking-wide ${isHome ? "text-white/70" : "text-black/80"}`}
-        >
+        <p className={`text-xs font-medium tracking-wide ${"text-black/80"}`}>
           &quot;Now Open for Business Customers Only – B2B Orders Welcome!&quot;
         </p>
       </div>

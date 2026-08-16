@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export function SignatureServices() {
   const services = [
-    { src: "/images/new/bamboo_pen_close.jpeg", alt: "Bamboo Pens" },
-    { src: "/images/new/eco_collection_pro.png", alt: "Nature Essentials" },
-    { src: "/images/new/wooden_cups.jpeg", alt: "Wooden Cups Set" },
+    { src: "/figma-images/signature1.jpg", alt: "Bamboo Pens" },
+    { src: "/figma-images/signature2.jpg", alt: "Nature Essentials" },
+    { src: "/figma-images/signature3.jpg", alt: "Wooden Cups Set" },
   ];
 
   return (
