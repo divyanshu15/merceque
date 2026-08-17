@@ -23,9 +23,9 @@ export function CollectionsGrid() {
     <section className="w-full">
       {/* Elevate banner — above the grid, transparent bg */}
       <div className="w-full bg-transparent py-10 sm:py-16 md:py-20 px-4 sm:px-6">
-        <div className="flex flex-col items-center gap-6 max-w-4xl mx-auto">
+        <div className="flex flex-col items-center gap-6 max-w-7xl mx-auto">
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white/95 drop-shadow-md text-center tracking-wide leading-tight sm:leading-snug"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-white/95 drop-shadow-md text-center tracking-wide leading-tight sm:leading-snug lg:whitespace-nowrap"
             style={{ fontFamily: "var(--font-italianno)", fontWeight: 500 }}
           >
             Elevate Your Lifestyle with Sustainable Bamboo &amp; Natural
