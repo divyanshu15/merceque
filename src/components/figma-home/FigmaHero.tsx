@@ -38,8 +38,8 @@ export function FigmaHero() {
       </div>
 
       {/* Top Content */}
-      <div className="z-10 w-full px-8 md:px-16 flex justify-end mt-8">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white drop-shadow-lg max-w-none text-right leading-tight">
+      <div className="z-10 w-full px-4 sm:px-8 md:px-16 flex justify-end mt-4 sm:mt-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white drop-shadow-lg max-w-none text-right leading-tight">
           Discover Our Amazing Products
         </h1>
       </div>

@@ -26,13 +26,13 @@ const items = [
 
 export function InfoGrid() {
   return (
-    <section className="w-full py-14 px-6 bg-white/30">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
+    <section className="w-full py-10 sm:py-14 px-4 sm:px-6 bg-white/30">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-8 sm:gap-y-10">
         {items.map(({ icon: Icon, heading, body }, i) => (
           <div key={i} className="flex flex-col gap-2">
             <Icon className="w-6 h-6 text-black/70 mb-1" strokeWidth={1.5} />
-            <h3 className="text-black font-semibold text-lg">{heading}</h3>
-            <p className="text-black/70 text-sm leading-relaxed">{body}</p>
+            <h3 className="text-black font-semibold text-base sm:text-lg">{heading}</h3>
+            <p className="text-black/80 text-sm leading-relaxed">{body}</p>
           </div>
         ))}
       </div>

@@ -22,21 +22,21 @@ export function CollectionsGrid() {
   return (
     <section className="w-full">
       {/* Elevate banner — above the grid, transparent bg */}
-      <div className="w-full bg-transparent py-20">
-        <div className="flex flex-col items-center gap-6">
+      <div className="w-full bg-transparent py-10 sm:py-16 md:py-20 px-4 sm:px-6">
+        <div className="flex flex-col items-center gap-6 max-w-4xl mx-auto">
           <h2
-            className="text-4xl md:text-5xl lg:text-6xl text-white/95 drop-shadow-md text-center tracking-wide"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white/95 drop-shadow-md text-center tracking-wide leading-tight sm:leading-snug"
             style={{ fontFamily: "var(--font-italianno)", fontWeight: 500 }}
           >
             Elevate Your Lifestyle with Sustainable Bamboo &amp; Natural
             Essentials
           </h2>
-          <div className="flex gap-6 flex-wrap justify-center">
+          <div className="flex gap-4 sm:gap-6 flex-wrap justify-center">
             <Link
               href="/our-products"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#1e2e20]/80 backdrop-blur-sm text-white px-12 py-3 font-cursive text-2xl md:text-3xl hover:bg-[#1e2e20] transition-colors shadow-md border border-white/20"
+              className="bg-[#1e2e20]/80 backdrop-blur-sm text-white px-8 sm:px-12 py-2.5 sm:py-3 font-cursive text-xl sm:text-2xl md:text-3xl hover:bg-[#1e2e20] transition-colors shadow-md border border-white/20"
             >
               Shop now
             </Link>
@@ -44,7 +44,7 @@ export function CollectionsGrid() {
               href="/about-us"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#1e2e20]/80 backdrop-blur-sm text-white px-12 py-3 font-cursive text-2xl md:text-3xl hover:bg-[#1e2e20] transition-colors shadow-md border border-white/20"
+              className="bg-[#1e2e20]/80 backdrop-blur-sm text-white px-8 sm:px-12 py-2.5 sm:py-3 font-cursive text-xl sm:text-2xl md:text-3xl hover:bg-[#1e2e20] transition-colors shadow-md border border-white/20"
             >
               Learn more
             </Link>
@@ -53,7 +53,7 @@ export function CollectionsGrid() {
       </div>
 
       {/* Collection grid — full-width green strip, content max-w-7xl */}
-      <div className="w-full bg-[#385642] px-6 py-10">
+      <div className="w-full bg-[#385642] px-4 sm:px-6 py-8 sm:py-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {collections.map((item, i) => (
@@ -65,8 +65,7 @@ export function CollectionsGrid() {
                 className="group flex flex-col gap-3"
               >
                 <h2
-                  className="text-white font-semibold whitespace-nowrap"
-                  style={{ fontSize: "clamp(0.75rem, 1.15vw, 1.5rem)" }}
+                  className="text-white font-semibold text-xl sm:text-2xl lg:text-[clamp(0.95rem,1.2vw,1.35rem)] xl:text-2xl whitespace-nowrap"
                 >
                   {item.title}
                 </h2>

@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export function SocialFollow() {
   return (
-    <section className="w-full py-10 px-6 bg-[#2B483B7D] text-white">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6">
-        <h2 className="text-2xl font-bold">Follow us</h2>
-        <div className="flex items-center gap-6">
+    <section className="w-full py-8 sm:py-10 px-4 sm:px-6 bg-[#2B483B7D] text-white">
+      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
+        <h2 className="text-xl sm:text-2xl font-bold">Follow us</h2>
+        <div className="flex items-center gap-5 sm:gap-6">
           <Link href="#" className="hover:opacity-80 transition-opacity">
             <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
               <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />

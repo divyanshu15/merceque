@@ -11,12 +11,12 @@ export function ViewAllProducts() {
   ];
 
   return (
-    <section className="w-full pt-16 pb-12 px-6 bg-transparent">
+    <section className="w-full pt-10 sm:pt-16 pb-8 sm:pb-12 px-4 sm:px-6 bg-transparent">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl text-[#1f2f21] font-normal mb-10 tracking-wide">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#1f2f21] font-normal mb-6 sm:mb-10 tracking-wide">
           View All Products
         </h2>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {products.map((p, i) => (
             <Link
               href="/our-products"
