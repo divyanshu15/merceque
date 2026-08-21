@@ -22,7 +22,7 @@ export function CollectionsGrid() {
   return (
     <section className="w-full">
       {/* Elevate banner — above the grid, transparent bg */}
-      <div className="w-full bg-transparent py-10 sm:py-16 md:py-20 px-4 sm:px-6">
+      <div className="w-full bg-transparent py-10 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36">
         <div className="flex flex-col items-center gap-6 max-w-7xl mx-auto">
           <h2
             className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-white/95 drop-shadow-md text-center tracking-wide leading-tight sm:leading-snug lg:whitespace-nowrap"
@@ -53,7 +53,7 @@ export function CollectionsGrid() {
       </div>
 
       {/* Collection grid — full-width green strip, content max-w-7xl */}
-      <div className="w-full bg-[#385642] px-4 sm:px-6 py-8 sm:py-10">
+      <div className="w-full bg-[#385642] px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36 py-8 sm:py-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {collections.map((item, i) => (

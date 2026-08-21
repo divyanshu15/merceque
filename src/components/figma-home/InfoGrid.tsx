@@ -26,7 +26,7 @@ const items = [
 
 export function InfoGrid() {
   return (
-    <section className="w-full py-10 sm:py-14 px-4 sm:px-6 bg-white/30">
+    <section className="w-full py-10 sm:py-14 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36 bg-white/30">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-8 sm:gap-y-10">
         {items.map(({ icon: Icon, heading, body }, i) => (
           <div key={i} className="flex flex-col gap-2">

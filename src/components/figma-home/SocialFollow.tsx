@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function SocialFollow() {
   return (
-    <section className="w-full py-8 sm:py-10 px-4 sm:px-6 bg-[#2B483B7D] text-white">
+    <section className="w-full py-8 sm:py-10 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36 bg-[#2B483B7D] text-white">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
         <h2 className="text-xl sm:text-2xl font-bold">Follow us</h2>
         <div className="flex items-center gap-5 sm:gap-6">

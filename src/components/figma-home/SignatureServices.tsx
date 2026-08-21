@@ -9,7 +9,7 @@ export function SignatureServices() {
   ];
 
   return (
-    <section className="w-full py-10 sm:py-16 md:py-20 px-4 sm:px-6 bg-[#2B483B]/100">
+    <section className="w-full py-10 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36 bg-[#2B483B]/100">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white font-normal mb-8 sm:mb-10 md:mb-12 text-left tracking-wide">
           Signature services

@@ -10,7 +10,7 @@ export function Footer() {
   const isHome = pathname === "/";
 
   return (
-    <footer className={`relative w-full overflow-hidden px-4 sm:px-6 py-8 sm:py-12 ${!isHome ? "bg-[#2B483B]" : ""}`}>
+    <footer className={`relative w-full overflow-hidden px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36 py-8 sm:py-12 ${!isHome ? "bg-[#2B483B]" : ""}`}>
       {/* bg-image only on homepage */}
       {isHome && (
         <Image

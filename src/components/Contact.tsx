@@ -3,7 +3,7 @@ import { Button } from "./ui/Button";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-32 px-6 bg-transparent relative z-10">
+    <section id="contact" className="py-32 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36 bg-transparent relative z-10">
       <div className="max-w-3xl mx-auto">
         <div className="mb-12">
           <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-tight mb-4 text-foreground">
