@@ -10,7 +10,7 @@ export function CollectionsGrid() {
     },
     {
       title: "Eco Care Collection",
-      src: "/figma-images/collection2.jpg",
+      src: "/images/new/eco-care.png",
     },
     { title: "Student Essentials", src: "/figma-images/collection3.png" },
     {
@@ -64,9 +64,7 @@ export function CollectionsGrid() {
                 key={i}
                 className="group flex flex-col gap-3"
               >
-                <h2
-                  className="text-white font-semibold text-xl sm:text-2xl lg:text-[clamp(0.95rem,1.2vw,1.35rem)] xl:text-2xl whitespace-nowrap"
-                >
+                <h2 className="text-white font-semibold text-xl sm:text-2xl lg:text-[clamp(0.95rem,1.2vw,1.35rem)] xl:text-2xl whitespace-nowrap">
                   {item.title}
                 </h2>
                 <div className="relative aspect-square w-full overflow-hidden rounded-md bg-white/10">
