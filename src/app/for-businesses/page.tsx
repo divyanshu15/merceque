@@ -25,14 +25,14 @@ export default function ForBusinessesPage() {
         <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-12 relative z-10">
           <div className="flex-1 flex flex-col items-start gap-6 animate-in fade-in slide-in-from-bottom-8 duration-700 mt-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-[#2b4433] leading-tight">
-              Eco-Gift Boxes for <br />
-              <span className="text-[#486350] italic font-serif capitalize">
-                Businesses & Institutions
+              ECO-GIFT BOXES FOR <br />
+              <span className="text-primary italic font-serif lowercase font-normal">
+                Businesses &amp; Institutions
               </span>
             </h1>
-            <p className="text-lg text-neutral-700 max-w-xl">
+            <p className="text-lg md:text-xl text-neutral-600 max-w-2xl leading-relaxed">
               Welcome to our Wholesale Portal — where your values meet ours.
-              Whether you're a university looking to appreciate faculty, a
+              Whether you&apos;re a university looking to appreciate faculty, a
               corporate office planning holiday gifts, or a retail store aiming
               to offer sustainable gifting options -- our Eco-Gift Boxes help
               your organization demonstrate environmental responsibility while
