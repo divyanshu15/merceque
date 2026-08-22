@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     const recaptcha = await verifyRecaptcha(gRecaptchaToken, 'newsletter_form');
     if (!recaptcha.success) {
       return NextResponse.json(
-        { error: 'reCAPTCHA verification failed. Please try again.' },
+        { error: recaptcha.error || 'reCAPTCHA verification failed. Please try again.' },
         { status: 400 }
       );
     }

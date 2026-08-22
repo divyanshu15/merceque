@@ -14,7 +14,7 @@ export async function verifyRecaptcha(token: string, action?: string) {
   }
 
   if (!token) {
-    return { success: false, error: 'reCAPTCHA token is missing' };
+    return { success: false, error: 'reCAPTCHA token is missing from request' };
   }
 
   try {
@@ -33,54 +33,62 @@ export async function verifyRecaptcha(token: string, action?: string) {
 
     if (!data.success) {
       const errorCodes: string[] = data['error-codes'] || [];
-      console.error('❌ reCAPTCHA verification failed with error codes:', errorCodes);
+      console.error('❌ Google reCAPTCHA siteverify failed:', { errorCodes, action });
 
-      // Handle browser-error (unregistered domain or key mismatch)
-      if (errorCodes.includes('browser-error')) {
-        console.error(
-          '💡 DIAGNOSTIC: "browser-error" means the domain (e.g. merceque.vercel.app) is not listed under "Domains" in your Google reCAPTCHA v3 Admin Console, or the build was not redeployed after setting NEXT_PUBLIC_RECAPTCHA_SITE_KEY.'
-        );
+      if (errorCodes.includes('invalid-input-secret')) {
+        return {
+          success: false,
+          error: 'reCAPTCHA Secret Key is invalid. Check RECAPTCHA_SECRET_KEY in Vercel.',
+        };
+      }
 
-        // Allow localhost testing seamlessly during development
+      if (errorCodes.includes('browser-error') || errorCodes.includes('hostname-mismatch')) {
+        // Allow local dev
         if (process.env.NODE_ENV === 'development') {
-          console.warn('⚠️ Development mode active: Allowing form submission despite local browser-error.');
+          console.warn('⚠️ Development mode: Bypassing local domain reCAPTCHA error.');
           return { success: true, score: 1.0 };
         }
 
         return {
           success: false,
-          error: 'reCAPTCHA domain error: Please add "merceque.vercel.app" to Domains in Google reCAPTCHA Console and Redeploy on Vercel.',
+          error: 'reCAPTCHA domain error: Please add "merceque.vercel.app" under Domains in Google reCAPTCHA v3 Console.',
         };
       }
 
-      if (errorCodes.includes('invalid-input-secret')) {
+      if (errorCodes.includes('timeout-or-duplicate')) {
         return {
           success: false,
-          error: 'reCAPTCHA Secret Key is invalid. Please check RECAPTCHA_SECRET_KEY in Vercel.',
+          error: 'reCAPTCHA token expired. Please try submitting again.',
         };
       }
 
       return {
         success: false,
-        error: `reCAPTCHA verification failed (${errorCodes.join(', ') || 'unknown error'})`,
+        error: `reCAPTCHA error: ${errorCodes.join(', ') || 'Verification failed'}`,
       };
     }
 
-    // reCAPTCHA v3 returns a score between 0.0 (bot) and 1.0 (human)
-    const scoreThreshold = 0.5;
-    const isHuman = data.score >= scoreThreshold;
+    // reCAPTCHA v3 score verification (0.0 = bot, 1.0 = human)
+    const scoreThreshold = 0.3; // Standard recommended threshold for form submissions
+    const userScore = data.score ?? 1.0;
+    const isHuman = userScore >= scoreThreshold;
 
     if (!isHuman) {
-      console.warn(`⚠️ Low reCAPTCHA score (${data.score}) detected for action: ${action}`);
+      console.warn(`⚠️ Low reCAPTCHA score (${userScore}) detected for action: ${action}`);
+      return {
+        success: false,
+        error: `Security score low (${userScore}). Submission rejected as automated request.`,
+        score: userScore,
+      };
     }
 
     return {
-      success: isHuman,
-      score: data.score,
+      success: true,
+      score: userScore,
       action: data.action,
     };
   } catch (err) {
     console.error('❌ reCAPTCHA server error:', err);
-    return { success: false, error: 'reCAPTCHA verification server error' };
+    return { success: false, error: 'reCAPTCHA verification server exception' };
   }
 }
