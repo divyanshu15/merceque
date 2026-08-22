@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/Button";
+import { executeRecaptcha } from "@/components/RecaptchaProvider";
 
 export function CatalogForm() {
   const [formData, setFormData] = useState({
@@ -11,26 +12,35 @@ export function CatalogForm() {
     enquiry: "",
   });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
+    setErrorMessage("");
+
     try {
+      const gRecaptchaToken = await executeRecaptcha("catalog_b2b_form");
+
       const res = await fetch("/api/b2b-orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, gRecaptchaToken }),
       });
+
+      const data = await res.json();
 
       if (res.ok) {
         setStatus("success");
         setFormData({ name: "", organization: "", email: "", enquiry: "" });
       } else {
         setStatus("error");
+        setErrorMessage(data.error || "There was a problem submitting your inquiry.");
       }
     } catch (error) {
       console.error(error);
       setStatus("error");
+      setErrorMessage("Network error occurred. Please try again.");
     }
   };
 
@@ -51,7 +61,7 @@ export function CatalogForm() {
       {status === "error" && (
         <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-6 text-sm" role="alert">
           <strong className="font-bold block mb-1">Error!</strong>
-          <span className="block sm:inline">There was a problem submitting your inquiry. Please try again.</span>
+          <span className="block sm:inline">{errorMessage || "There was a problem submitting your inquiry. Please try again."}</span>
         </div>
       )}
 

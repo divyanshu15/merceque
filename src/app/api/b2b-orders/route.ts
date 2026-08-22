@@ -1,15 +1,25 @@
 import { NextResponse } from 'next/server';
 import prisma from '@/lib/prisma';
 import { sendEmailNotification } from '@/lib/email';
+import { verifyRecaptcha } from '@/lib/recaptcha';
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { name, email, organization, startupName, enquiry, product, quantity } = body;
+    const { name, email, organization, startupName, enquiry, product, quantity, gRecaptchaToken } = body;
 
     if (!name || !email) {
       return NextResponse.json(
         { error: 'Missing required fields' },
+        { status: 400 }
+      );
+    }
+
+    // Verify Google reCAPTCHA v3 token
+    const recaptcha = await verifyRecaptcha(gRecaptchaToken, 'catalog_b2b_form');
+    if (!recaptcha.success) {
+      return NextResponse.json(
+        { error: 'reCAPTCHA verification failed. Please try again.' },
         { status: 400 }
       );
     }
@@ -45,7 +55,7 @@ export async function POST(request: Request) {
             ${enquiryText.replace(/\n/g, '<br/>')}
           </div>
           <hr style="margin-top: 24px; border: none; border-top: 1px solid #e2e8f0;"/>
-          <p style="font-size: 12px; color: #718096; margin-bottom: 0;">Sent via Merceque B2B Order & Catalogue Request Form</p>
+          <p style="font-size: 12px; color: #718096; margin-bottom: 0;">Sent via Merceque B2B Order & Catalogue Request Form (reCAPTCHA Protected)</p>
         </div>
       `,
     });

@@ -2,32 +2,42 @@
 
 import React, { useState } from "react";
 import { Button } from "./ui/Button";
+import { executeRecaptcha } from "@/components/RecaptchaProvider";
 
 export function Newsletter() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
 
     setStatus("loading");
+    setErrorMessage("");
+
     try {
+      const gRecaptchaToken = await executeRecaptcha("newsletter_form");
+
       const res = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, gRecaptchaToken }),
       });
+
+      const data = await res.json();
 
       if (res.ok) {
         setStatus("success");
         setEmail("");
       } else {
         setStatus("error");
+        setErrorMessage(data.error || "There was an error subscribing. Please try again.");
       }
     } catch (error) {
       console.error(error);
       setStatus("error");
+      setErrorMessage("Network error occurred. Please try again.");
     }
   };
 
@@ -52,7 +62,7 @@ export function Newsletter() {
 
         {status === "error" && (
           <div className="bg-red-100 border border-red-400 text-red-700 px-6 py-3 rounded-full mb-8 max-w-xl mx-auto text-sm font-medium">
-            There was an error subscribing. Please try again.
+            {errorMessage || "There was an error subscribing. Please try again."}
           </div>
         )}
         

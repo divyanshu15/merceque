@@ -2,32 +2,42 @@
 
 import React, { useState } from "react";
 import { Button } from "./ui/Button";
+import { executeRecaptcha } from "@/components/RecaptchaProvider";
 
 export function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
 
     setStatus("loading");
+    setErrorMessage("");
+
     try {
+      const gRecaptchaToken = await executeRecaptcha("contact_form");
+
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, gRecaptchaToken }),
       });
+
+      const data = await res.json();
 
       if (res.ok) {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
       } else {
         setStatus("error");
+        setErrorMessage(data.error || "There was an issue sending your message.");
       }
     } catch (error) {
       console.error(error);
       setStatus("error");
+      setErrorMessage("Network error occurred. Please try again.");
     }
   };
 
@@ -53,7 +63,7 @@ export function Contact() {
         {status === "error" && (
           <div className="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-xl mb-8">
             <strong className="font-bold block mb-1">Error Sending Message</strong>
-            <span>There was an issue sending your message. Please try again or email us directly.</span>
+            <span>{errorMessage || "There was an issue sending your message. Please try again or email us directly."}</span>
           </div>
         )}
 

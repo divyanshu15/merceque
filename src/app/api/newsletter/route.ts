@@ -1,14 +1,24 @@
 import { NextResponse } from 'next/server';
 import { sendEmailNotification } from '@/lib/email';
+import { verifyRecaptcha } from '@/lib/recaptcha';
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { email } = body;
+    const { email, gRecaptchaToken } = body;
 
     if (!email) {
       return NextResponse.json(
         { error: 'Email is required' },
+        { status: 400 }
+      );
+    }
+
+    // Verify Google reCAPTCHA v3 token
+    const recaptcha = await verifyRecaptcha(gRecaptchaToken, 'newsletter_form');
+    if (!recaptcha.success) {
+      return NextResponse.json(
+        { error: 'reCAPTCHA verification failed. Please try again.' },
         { status: 400 }
       );
     }
@@ -22,7 +32,7 @@ export async function POST(request: Request) {
           <p style="font-size: 16px;">A new user has subscribed to the Merceque newsletter:</p>
           <p style="font-size: 18px; font-weight: bold; color: #2b4433;"><a href="mailto:${email}">${email}</a></p>
           <hr style="margin-top: 24px; border: none; border-top: 1px solid #e2e8f0;"/>
-          <p style="font-size: 12px; color: #718096; margin-bottom: 0;">Sent via Merceque Newsletter Subscription Form</p>
+          <p style="font-size: 12px; color: #718096; margin-bottom: 0;">Sent via Merceque Newsletter Subscription Form (reCAPTCHA Protected)</p>
         </div>
       `,
     });

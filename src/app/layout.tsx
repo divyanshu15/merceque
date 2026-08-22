@@ -38,6 +38,7 @@ export const metadata: Metadata = {
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { RecaptchaProvider } from "@/components/RecaptchaProvider";
 
 export default function RootLayout({
   children,
@@ -53,6 +54,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <RecaptchaProvider />
           <div className="noise-overlay" />
           <Header />
           {children}
