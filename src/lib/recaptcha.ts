@@ -5,9 +5,15 @@ export function getCleanSecretKey() {
 }
 
 export async function verifyRecaptcha(token: string, action?: string) {
+  // Allow disabling reCAPTCHA via env if needed
+  if (process.env.DISABLE_RECAPTCHA === 'true') {
+    console.warn('⚠️ DISABLE_RECAPTCHA is set to true. Bypassing reCAPTCHA verification.');
+    return { success: true, score: 1.0 };
+  }
+
   const secretKey = getCleanSecretKey();
 
-  // Fallback for development if keys are not configured yet
+  // Fallback if secret key is not set or placeholder
   if (!secretKey || secretKey === 'your_recaptcha_secret_key_here') {
     console.warn('⚠️ RECAPTCHA_SECRET_KEY is not set. Skipping reCAPTCHA verification.');
     return { success: true, score: 1.0 };
@@ -33,12 +39,19 @@ export async function verifyRecaptcha(token: string, action?: string) {
 
     if (!data.success) {
       const errorCodes: string[] = data['error-codes'] || [];
-      console.error('❌ Google reCAPTCHA siteverify failed:', { errorCodes, action });
+      console.error('❌ Google reCAPTCHA siteverify failed:', { errorCodes, action, data });
 
       if (errorCodes.includes('invalid-input-secret')) {
         return {
           success: false,
           error: 'reCAPTCHA Secret Key is invalid. Check RECAPTCHA_SECRET_KEY in Vercel.',
+        };
+      }
+
+      if (errorCodes.includes('invalid-input-response')) {
+        return {
+          success: false,
+          error: 'reCAPTCHA Key Mismatch: SITE_KEY and SECRET_KEY must belong to the exact same reCAPTCHA v3 project in Google Console.',
         };
       }
 
@@ -58,7 +71,7 @@ export async function verifyRecaptcha(token: string, action?: string) {
       if (errorCodes.includes('timeout-or-duplicate')) {
         return {
           success: false,
-          error: 'reCAPTCHA token expired. Please try submitting again.',
+          error: 'reCAPTCHA token expired or reused. Please try submitting again.',
         };
       }
 
