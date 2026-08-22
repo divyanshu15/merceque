@@ -22,12 +22,12 @@ export function Header() {
           &quot;Now Open for Business Customers Only – B2B Orders Welcome!&quot;
         </p>
       </div>
-      <div className="w-full bg-transparent">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36 h-16 lg:h-24 flex items-center justify-between">
+      <div className="w-full bg-transparent px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36">
+        <div className="max-w-7xl mx-auto h-16 lg:h-24 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center group">
+          <Link href="/" className="flex items-center group p-[5px]">
             <span
-              className={`text-3xl md:text-4xl font-cursive font-bold drop-shadow-sm ${"text-[#1f3125]"}`}
+              className={`text-3xl sm:text-4xl lg:text-5xl font-cursive font-bold drop-shadow-sm leading-tight ${"text-[#1f3125]"}`}
             >
               Merceque
             </span>

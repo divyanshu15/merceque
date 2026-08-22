@@ -38,10 +38,12 @@ export function FigmaHero() {
       </div>
 
       {/* Top Content */}
-      <div className="z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36 flex justify-end mt-4 sm:mt-8">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white drop-shadow-lg max-w-none text-right leading-tight">
-          Discover Our Amazing Products
-        </h1>
+      <div className="z-10 w-full px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36 mt-4 sm:mt-8">
+        <div className="max-w-7xl mx-auto flex justify-end">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white drop-shadow-lg max-w-none text-right leading-tight">
+            Discover Our Amazing Products
+          </h1>
+        </div>
       </div>
 
       {/* Bottom Content — dark olive strip matching Figma */}

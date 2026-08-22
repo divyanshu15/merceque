@@ -54,7 +54,8 @@ export default async function ProductPage({ params }: { params: Promise<{ handle
 
   return (
     <div className="min-h-screen bg-[#dbe1d6] flex flex-col">
-      <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36 pt-32 md:pt-40 pb-12 md:pb-24">
+      <main className="flex-1 w-full px-4 sm:px-6 md:px-12 lg:px-24 xl:px-28 2xl:px-36 pt-32 md:pt-40 pb-12 md:pb-24">
+        <div className="max-w-7xl mx-auto">
         {/* Breadcrumb / Back button */}
         <Link 
           href="/our-products" 
@@ -150,7 +151,8 @@ export default async function ProductPage({ params }: { params: Promise<{ handle
             </div>
           </div>
         </div>
-      </main>
+      </div>
+    </main>
     </div>
   );
 }
